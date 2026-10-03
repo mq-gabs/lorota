@@ -4,9 +4,9 @@ import { loadQuestions } from "./questions";
 describe("questions file", () => {
   const questions = loadQuestions();
 
-  it("has exactly 30 entries with unique ids q001..q030", () => {
-    expect(questions).toHaveLength(30);
-    expect(new Set(questions.map((q) => q.id)).size).toBe(30);
+  it("has exactly 60 entries with unique ids q001..q060", () => {
+    expect(questions).toHaveLength(60);
+    expect(new Set(questions.map((q) => q.id)).size).toBe(60);
     questions.forEach((q, i) => expect(q.id).toBe(`q${String(i + 1).padStart(3, "0")}`));
   });
 
@@ -18,5 +18,10 @@ describe("questions file", () => {
       expect(typeof q.checked).toBe("boolean");
       expect(q.text).toContain("___");
     }
+  });
+
+  it("has no repeated questions or answers", () => {
+    expect(new Set(questions.map((q) => q.text)).size).toBe(questions.length);
+    expect(new Set(questions.map((q) => q.answer.toLowerCase())).size).toBe(questions.length);
   });
 });

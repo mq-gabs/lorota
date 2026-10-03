@@ -208,5 +208,215 @@
     "answer": "cobras",
     "source": "https://en.wikipedia.org/wiki/Ilha_da_Queimada_Grande",
     "checked": true
+  },
+  {
+    "id": "q031",
+    "text": "Em 1932, o exército da Austrália travou uma guerra contra ___ e perdeu.",
+    "answer": "emus",
+    "source": "Wikipedia (en): Emu War",
+    "checked": false
+  },
+  {
+    "id": "q032",
+    "text": "Nos anos 1830, o ___ foi vendido nos Estados Unidos como remédio para indigestão.",
+    "answer": "ketchup",
+    "source": "Wikipedia (en): Ketchup",
+    "checked": false
+  },
+  {
+    "id": "q033",
+    "text": "A Universidade de Oxford é mais antiga que o Império ___.",
+    "answer": "Asteca",
+    "source": "Wikipedia (en): University of Oxford",
+    "checked": false
+  },
+  {
+    "id": "q034",
+    "text": "Cleópatra viveu mais perto da chegada do homem à Lua do que da construção da ___.",
+    "answer": "Grande Pirâmide",
+    "source": "Wikipedia (en): Cleopatra",
+    "checked": false
+  },
+  {
+    "id": "q035",
+    "text": "Em 1807, durante uma caçada, Napoleão foi atacado por centenas de ___.",
+    "answer": "coelhos",
+    "source": "Wikipedia (en): Napoleon (rabbit attack anecdote, memoirs of Paul Thiébault)",
+    "checked": false
+  },
+  {
+    "id": "q036",
+    "text": "Em 1896, a guerra entre o Reino Unido e ___ durou menos de 45 minutos.",
+    "answer": "Zanzibar",
+    "source": "Wikipedia (en): Anglo-Zanzibar War",
+    "checked": false
+  },
+  {
+    "id": "q037",
+    "text": "No século I, Heron de Alexandria inventou uma máquina automática que vendia ___.",
+    "answer": "água benta",
+    "source": "Wikipedia (en): Vending machine",
+    "checked": false
+  },
+  {
+    "id": "q038",
+    "text": "Para a botânica, a banana é classificada como uma ___.",
+    "answer": "baga",
+    "source": "Wikipedia (en): Banana",
+    "checked": false
+  },
+  {
+    "id": "q039",
+    "text": "Em Vênus, um ___ dura mais do que um ano.",
+    "answer": "dia",
+    "source": "Wikipedia (en): Venus",
+    "checked": false
+  },
+  {
+    "id": "q040",
+    "text": "Os coalas têm ___ quase idênticas às dos humanos.",
+    "answer": "impressões digitais",
+    "source": "Wikipedia (en): Koala",
+    "checked": false
+  },
+  {
+    "id": "q041",
+    "text": "Em 1975, cerca de 90% das mulheres da ___ entraram em greve por um dia.",
+    "answer": "Islândia",
+    "source": "Wikipedia (en): 1975 Icelandic women's strike",
+    "checked": false
+  },
+  {
+    "id": "q042",
+    "text": "Abraham Lincoln faz parte do Hall da Fama da ___ dos Estados Unidos.",
+    "answer": "luta livre",
+    "source": "Wikipedia (en): National Wrestling Hall of Fame and Museum",
+    "checked": false
+  },
+  {
+    "id": "q043",
+    "text": "Em 1698, o czar Pedro, o Grande, criou na Rússia um imposto sobre ___.",
+    "answer": "barbas",
+    "source": "Wikipedia (en): Beard tax",
+    "checked": false
+  },
+  {
+    "id": "q044",
+    "text": "A pizza havaiana foi inventada no ___.",
+    "answer": "Canadá",
+    "source": "Wikipedia (en): Hawaiian pizza",
+    "checked": false
+  },
+  {
+    "id": "q045",
+    "text": "O maior deserto do mundo é a ___.",
+    "answer": "Antártida",
+    "source": "Wikipedia (en): List of deserts by area",
+    "checked": false
+  },
+  {
+    "id": "q046",
+    "text": "Em 1904, Louis Cartier criou um relógio de pulso para que ___ pudesse ver as horas enquanto voava.",
+    "answer": "Santos Dumont",
+    "source": "Wikipedia (en): Cartier Santos",
+    "checked": false
+  },
+  {
+    "id": "q047",
+    "text": "Na Exposição do Centenário de 1876, nos EUA, Dom Pedro II testou o recém-inventado ___ de Graham Bell.",
+    "answer": "telefone",
+    "source": "Wikipedia (en): Pedro II of Brazil",
+    "checked": false
+  },
+  {
+    "id": "q048",
+    "text": "Em 1904, o Rio de Janeiro viveu uma revolta popular contra a vacinação obrigatória contra ___.",
+    "answer": "varíola",
+    "source": "Wikipedia (pt): Revolta da Vacina",
+    "checked": false
+  },
+  {
+    "id": "q049",
+    "text": "Em 2008, a Guarda Real da Noruega concedeu o título de cavaleiro a um ___.",
+    "answer": "pinguim",
+    "source": "Wikipedia (en): Nils Olav",
+    "checked": false
+  },
+  {
+    "id": "q050",
+    "text": "O guarda-florestal americano Roy Sullivan sobreviveu a ___ raios ao longo da vida.",
+    "answer": "sete",
+    "source": "Wikipedia (en): Roy Sullivan",
+    "checked": false
+  },
+  {
+    "id": "q051",
+    "text": "Em 1893, a Suprema Corte dos EUA decidiu que, para fins de impostos, o tomate é uma ___.",
+    "answer": "hortaliça",
+    "source": "Wikipedia (en): Nix v. Hedden",
+    "checked": false
+  },
+  {
+    "id": "q052",
+    "text": "O cão Hachiko esperou o dono, que já tinha morrido, numa estação de trem de Tóquio por cerca de ___ anos.",
+    "answer": "nove",
+    "source": "Wikipedia (en): Hachikō",
+    "checked": false
+  },
+  {
+    "id": "q053",
+    "text": "Na Copa do Mundo de 2010, um ___ chamado Paul ficou famoso por prever os resultados dos jogos.",
+    "answer": "polvo",
+    "source": "Wikipedia (en): Paul the Octopus",
+    "checked": false
+  },
+  {
+    "id": "q054",
+    "text": "Nos Jogos Olímpicos de 1900, em Paris, houve uma prova de tiro em ___ vivos.",
+    "answer": "pombos",
+    "source": "Wikipedia (en): Shooting at the 1900 Summer Olympics",
+    "checked": false
+  },
+  {
+    "id": "q055",
+    "text": "Na Roma Antiga, a ___ era usada para lavar roupa e até para clarear os dentes.",
+    "answer": "urina",
+    "source": "Wikipedia (en): Urine (history of uses)",
+    "checked": false
+  },
+  {
+    "id": "q056",
+    "text": "O olho do avestruz é maior que o seu ___.",
+    "answer": "cérebro",
+    "source": "Wikipedia (en): Common ostrich",
+    "checked": false
+  },
+  {
+    "id": "q057",
+    "text": "O refrigerante ___ foi criado na Alemanha nazista, quando faltou xarope de Coca-Cola.",
+    "answer": "Fanta",
+    "source": "Wikipedia (en): Fanta",
+    "checked": false
+  },
+  {
+    "id": "q058",
+    "text": "O Hino Nacional brasileiro passou quase um século sem ___ oficial.",
+    "answer": "letra",
+    "source": "Wikipedia (pt): Hino Nacional Brasileiro",
+    "checked": false
+  },
+  {
+    "id": "q059",
+    "text": "O tiranossauro viveu mais perto de nós no tempo do que do ___.",
+    "answer": "estegossauro",
+    "source": "Wikipedia (en): Stegosaurus",
+    "checked": false
+  },
+  {
+    "id": "q060",
+    "text": "Os tubarões existem há mais tempo do que as ___.",
+    "answer": "árvores",
+    "source": "Wikipedia (en): Shark (evolution)",
+    "checked": false
   }
 ]
