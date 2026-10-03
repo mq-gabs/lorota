@@ -3,9 +3,15 @@ import type { Ack, ClientToServerEvents, ServerToClientEvents } from "@lorota/sh
 import { io } from "socket.io-client";
 import type { Socket } from "socket.io-client";
 
-export const socket: Socket<ServerToClientEvents, ClientToServerEvents> = io({
-  transports: ["websocket", "polling"],
-});
+// Backend URL when the client is hosted separately (e.g. https://api.example.com).
+// Unset = same origin, which is how dev (Vite proxy) and the single-process deploy work.
+const SERVER_URL: string | undefined = import.meta.env.VITE_SERVER_URL || undefined;
+// WebSocket first; fall back to HTTP long-polling where WebSockets are blocked.
+const SOCKET_OPTIONS = { transports: ["websocket", "polling"], tryAllTransports: true };
+
+export const socket: Socket<ServerToClientEvents, ClientToServerEvents> = SERVER_URL
+  ? io(SERVER_URL, SOCKET_OPTIONS)
+  : io(SOCKET_OPTIONS);
 
 /** Emits an event with an ack, as a promise. Times out as a generic error. */
 export function request<T extends object = object>(event: keyof ClientToServerEvents, payload: object): Promise<Ack<T>> {

@@ -43,3 +43,37 @@ Small extensions that the spec's types didn't cover:
 - In the lobby, a disconnected player gives up their slot or nickname to someone new joining, and is dropped when
   the game starts.
 - Audio module also exposes `setMusicMood({ fast, ducked })` for the last-10-seconds speed-up and reveal ducking.
+
+## Deploying
+
+The server keeps all game state in memory, so the backend must be **one long-running Node process** (WebSockets,
+no serverless functions, no multiple instances). Restarting it ends all live games.
+
+### Option A: one service (simplest)
+
+Any Node host (Render, Railway, Fly.io, a VPS):
+
+- Build: `npm ci && npm run build`
+- Start: `npm start` (listens on `$PORT`)
+
+The server serves the client, so there's no CORS or URL config.
+
+### Option B: separate frontend and backend
+
+Both are built from the repo root, because the client and server import the `shared` workspace.
+
+**Backend** (Render web service, Railway, Fly.io, VPS):
+
+- Build: `npm ci && npm run build -w server`
+- Start: `npm start`
+- Env: `CORS_ORIGIN=https://your-frontend.example.com` (comma-separated for several, e.g. a preview URL)
+- Health check: `GET /health`
+
+**Frontend** (any static host: Netlify, Cloudflare Pages, Vercel):
+
+- Root directory: repo root
+- Build: `npm ci && npm run build -w client`
+- Output directory: `client/dist`
+- Env at build time: `VITE_SERVER_URL=https://your-backend.example.com` (baked into the bundle; rebuild after changing it)
+- SPA fallback so invite links like `/r/ABCD` load the app: `client/public/_redirects` already handles Netlify and
+  Cloudflare Pages. On Vercel, add a rewrite of `/(.*)` to `/index.html`.

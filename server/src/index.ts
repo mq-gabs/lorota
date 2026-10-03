@@ -8,11 +8,25 @@ import { attachSockets } from "./sockets";
 import { loadQuestions } from "./questions";
 
 const PORT = Number(process.env.PORT) || 3000;
+// Comma-separated origins allowed to connect when the client is hosted elsewhere,
+// e.g. "https://lorota.example.com". Required for Socket.IO's HTTP long-polling
+// fallback across origins (browsers don't apply CORS to WebSockets).
+const CORS_ORIGINS = (process.env.CORS_ORIGIN ?? "")
+  .split(",")
+  .map((o) => o.trim())
+  .filter(Boolean);
 const CLIENT_DIST = resolve(dirname(fileURLToPath(import.meta.url)), "../../client/dist");
 
 const app = express();
 const httpServer = createServer(app);
-const io = new Server(httpServer, { serveClient: false });
+const io = new Server(httpServer, {
+  serveClient: false,
+  cors: CORS_ORIGINS.length ? { origin: CORS_ORIGINS } : undefined,
+});
+
+app.get("/health", (_req, res) => {
+  res.send("ok");
+});
 
 attachSockets(io, loadQuestions());
 
