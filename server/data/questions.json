@@ -1,0 +1,212 @@
+[
+  {
+    "id": "q001",
+    "text": "Em 1923, o jóquei Frank Hayes venceu uma corrida em Nova York mesmo estando ___.",
+    "answer": "morto",
+    "source": "https://en.wikipedia.org/wiki/Frank_Hayes_(jockey)",
+    "checked": true
+  },
+  {
+    "id": "q002",
+    "text": "Em 1518, em Estrasburgo, dezenas de pessoas passaram semanas sem conseguir parar de ___.",
+    "answer": "dançar",
+    "source": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518",
+    "checked": true
+  },
+  {
+    "id": "q003",
+    "text": "Em 1919, uma onda gigante de ___ invadiu as ruas de Boston e matou 21 pessoas.",
+    "answer": "melaço",
+    "source": "https://en.wikipedia.org/wiki/Great_Molasses_Flood",
+    "checked": true
+  },
+  {
+    "id": "q004",
+    "text": "No ano de 897, o papa Estêvão VI levou a julgamento o ___ do papa Formoso.",
+    "answer": "cadáver",
+    "source": "https://en.wikipedia.org/wiki/Cadaver_Synod",
+    "checked": true
+  },
+  {
+    "id": "q005",
+    "text": "As fezes do vombate, um marsupial australiano, têm formato de ___.",
+    "answer": "cubo",
+    "source": "https://en.wikipedia.org/wiki/Wombat",
+    "checked": true
+  },
+  {
+    "id": "q006",
+    "text": "Parte das cinzas do químico Fredric Baur foi enterrada dentro de sua invenção mais famosa: a ___.",
+    "answer": "lata de Pringles",
+    "source": "https://en.wikipedia.org/wiki/Fredric_Baur",
+    "checked": true
+  },
+  {
+    "id": "q007",
+    "text": "O animal nacional da Escócia é o ___.",
+    "answer": "unicórnio",
+    "source": "https://en.wikipedia.org/wiki/National_symbols_of_Scotland",
+    "checked": true
+  },
+  {
+    "id": "q008",
+    "text": "De 1900 a 1920, o ___ foi uma modalidade dos Jogos Olímpicos.",
+    "answer": "cabo de guerra",
+    "source": "Wikipedia (en): Tug of war at the Summer Olympics",
+    "checked": false
+  },
+  {
+    "id": "q009",
+    "text": "Fundada em 1889, a Nintendo começou fabricando ___.",
+    "answer": "cartas de baralho",
+    "source": "Wikipedia (en): History of Nintendo",
+    "checked": false
+  },
+  {
+    "id": "q010",
+    "text": "O plástico-bolha foi inventado em 1957 para ser vendido como ___.",
+    "answer": "papel de parede",
+    "source": "https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/",
+    "checked": true
+  },
+  {
+    "id": "q011",
+    "text": "Antes de fazer carros esportivos, a Lamborghini fabricava ___.",
+    "answer": "tratores",
+    "source": "Wikipedia (en): Lamborghini Trattori",
+    "checked": false
+  },
+  {
+    "id": "q012",
+    "text": "Na maratona olímpica de 1904, o primeiro a cruzar a linha de chegada tinha feito parte do percurso de ___.",
+    "answer": "carro",
+    "source": "https://en.wikipedia.org/wiki/Frederick_Lorz",
+    "checked": true
+  },
+  {
+    "id": "q013",
+    "text": "Nos anos 1940, um frango chamado Mike viveu 18 meses sem ___.",
+    "answer": "cabeça",
+    "source": "Wikipedia (en): Mike the Headless Chicken",
+    "checked": false
+  },
+  {
+    "id": "q014",
+    "text": "Em 1962, escolas da Tanganica (atual Tanzânia) fecharam por causa de uma epidemia de ___.",
+    "answer": "riso",
+    "source": "Wikipedia (en): Tanganyika laughter epidemic",
+    "checked": false
+  },
+  {
+    "id": "q015",
+    "text": "Em 1925, o golpista Victor Lustig \"vendeu\" a ___ para um comerciante de sucata.",
+    "answer": "Torre Eiffel",
+    "source": "Wikipedia (en): Victor Lustig",
+    "checked": false
+  },
+  {
+    "id": "q016",
+    "text": "Em 1967, o primeiro-ministro da Austrália, Harold Holt, desapareceu para sempre enquanto ___.",
+    "answer": "nadava",
+    "source": "Wikipedia (en): Disappearance of Harold Holt",
+    "checked": false
+  },
+  {
+    "id": "q017",
+    "text": "Em 1386, na cidade francesa de Falaise, um ___ foi julgado e enforcado por assassinato.",
+    "answer": "porco",
+    "source": "https://en.wikipedia.org/wiki/Animal_trial",
+    "checked": true
+  },
+  {
+    "id": "q018",
+    "text": "Apesar do nome, o chapéu-panamá é originário do ___.",
+    "answer": "Equador",
+    "source": "Wikipedia (en): Panama hat",
+    "checked": false
+  },
+  {
+    "id": "q019",
+    "text": "Em 1965, o astronauta John Young levou escondido para o espaço um ___.",
+    "answer": "sanduíche",
+    "source": "Wikipedia (en): Gemini 3",
+    "checked": false
+  },
+  {
+    "id": "q020",
+    "text": "O primeiro item vendido no eBay, em 1995, estava quebrado. Era uma ___.",
+    "answer": "caneta laser",
+    "source": "https://time.com/4018841/first-item-sold-listed-ebay/",
+    "checked": true
+  },
+  {
+    "id": "q021",
+    "text": "A primeira webcam do mundo, criada na Universidade de Cambridge, servia para vigiar uma ___.",
+    "answer": "cafeteira",
+    "source": "Wikipedia (en): Trojan Room coffee pot",
+    "checked": false
+  },
+  {
+    "id": "q022",
+    "text": "O rei Carlos VI da França acreditava que seu corpo era feito de ___.",
+    "answer": "vidro",
+    "source": "https://en.wikipedia.org/wiki/Glass_delusion",
+    "checked": true
+  },
+  {
+    "id": "q023",
+    "text": "Thimphu, capital do Butão, é conhecida por ser uma capital sem nenhum ___.",
+    "answer": "semáforo",
+    "source": "https://www.bhutanwiki.org/articles/thimphu",
+    "checked": true
+  },
+  {
+    "id": "q024",
+    "text": "No campeonato mundial de carregar a esposa, na Finlândia, o prêmio é o peso da esposa em ___.",
+    "answer": "cerveja",
+    "source": "https://en.wikipedia.org/wiki/Wife-carrying",
+    "checked": true
+  },
+  {
+    "id": "q025",
+    "text": "Em 1959, um ___ recebeu cerca de 100 mil votos para vereador em São Paulo.",
+    "answer": "rinoceronte",
+    "source": "https://pt.wikipedia.org/wiki/Rinoceronte_Cacareco",
+    "checked": true
+  },
+  {
+    "id": "q026",
+    "text": "Entre 1961 e 1963, Brasil e França quase entraram em guerra por causa da pesca de ___.",
+    "answer": "lagosta",
+    "source": "https://en.wikipedia.org/wiki/Lobster_War",
+    "checked": true
+  },
+  {
+    "id": "q027",
+    "text": "Em 1928, Henry Ford fundou uma cidade na Amazônia para produzir ___.",
+    "answer": "borracha",
+    "source": "Wikipedia (pt): Fordlândia",
+    "checked": false
+  },
+  {
+    "id": "q028",
+    "text": "Para pagar a viagem às Olimpíadas de 1932, os atletas brasileiros tinham de vender ___ nos portos pelo caminho.",
+    "answer": "café",
+    "source": "https://agenciabrasil.ebc.com.br/geral/noticia/2016-02/familia-do-homem-de-ferro-dos-jogos-de-1932-cobra-reconhecimento-do-atleta",
+    "checked": true
+  },
+  {
+    "id": "q029",
+    "text": "Em março de 1969, a capital do Brasil foi transferida por três dias para ___.",
+    "answer": "Curitiba",
+    "source": "https://www.gazetadopovo.com.br/politica/parana/curitiba-ja-foi-a-capital-do-brasil-por-tres-dias-48zj4cby49uxdh9f6ycemrfle/",
+    "checked": true
+  },
+  {
+    "id": "q030",
+    "text": "A Ilha da Queimada Grande, no litoral de São Paulo, é fechada ao público por causa de suas milhares de ___.",
+    "answer": "cobras",
+    "source": "https://en.wikipedia.org/wiki/Ilha_da_Queimada_Grande",
+    "checked": true
+  }
+]

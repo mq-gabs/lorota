@@ -1,0 +1,22 @@
+{
+  "name": "@lorota/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/index.ts",
+    "build": "node scripts/build.mjs",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "@lorota/shared": "*",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15"
+  }
+}
