@@ -136,6 +136,13 @@ export function attachSockets(io: IO, questions: Question[]): RoomManager {
       reply(ack, s ? manager.playAgain(s.roomCode, s.playerId) : notInRoom);
     });
 
+    socket.on("chat:send", (p, ack) => {
+      const s = session();
+      if (!s) return reply(ack, notInRoom);
+      if (!isObject(p) || !isText(p.text)) return reply(ack, { ok: false, error: "INVALID_PAYLOAD" });
+      reply(ack, manager.sendChat(s.roomCode, s.playerId, p.text));
+    });
+
     socket.on("disconnect", () => {
       const s = sessions.get(socket.id);
       sessions.delete(socket.id);

@@ -77,6 +77,13 @@ export const S = {
   waitingPlayAgain: "Esperando o dono da sala decidir se vai ter revanche",
   and: " e ",
 
+  // Chat
+  chat: "Chat",
+  chatLabel: "Mensagem",
+  chatPlaceholder: "Manda uma mensagem",
+  chatEmpty: "Nenhuma mensagem ainda. Manda um oi!",
+  chatTime: (ms: number) => new Date(ms).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" }),
+
   // Audio
   music: "Música",
   effects: "Efeitos",

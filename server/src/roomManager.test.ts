@@ -1,4 +1,7 @@
 import {
+  CHAT_HISTORY,
+  EMPTY_ROOM_TTL_SECONDS,
+  MAX_CHAT_LENGTH,
   REVEAL_SECONDS_PER_OPTION,
   ROUNDS_PER_GAME,
   SCOREBOARD_SECONDS,
@@ -237,12 +240,69 @@ describe("snapshot secrecy", () => {
     expect(voting.options!.map((o) => o.text)).toContain(truth);
     expect(m.snapshot(room, ids[1]).yourVote).toBe(optionIds(room)[0]);
     expect(voting.players.find((p) => p.id === ids[1])!.hasVoted).toBe(true);
+    // Chat carries only what players typed in the chat.
+    m.sendChat(room.code, ids[1], "oi");
+    const chat = m.snapshot(room, ids[0]).chat;
+    expect(chat.map((c) => c.text)).toEqual(["oi"]);
+    expect(chat.every((c) => Object.keys(c).sort().join() === "authorId,id,nickname,sentAt,text")).toBe(true);
 
     vi.advanceTimersByTime(VOTING_SECONDS * 1000);
     expect(room.phase).toBe("REVEAL");
     expect(m.snapshot(room, ids[0]).revealed).toHaveLength(1);
     vi.advanceTimersByTime(REVEAL_SECONDS_PER_OPTION * 1000);
     expect(m.snapshot(room, ids[0]).revealed).toHaveLength(2);
+  });
+});
+
+describe("chat", () => {
+  it("stores messages with author and send time, in any phase", () => {
+    const { m, room, ids } = setup(2);
+    vi.setSystemTime(new Date("2026-10-05T12:34:00Z"));
+    expect(m.sendChat(room.code, ids[0], "  oi   gente ")).toEqual({ ok: true });
+    start(m, room, ids[0]);
+    expect(m.sendChat(room.code, ids[1], "boa sorte")).toEqual({ ok: true });
+    const chat = m.snapshot(room, ids[1]).chat;
+    expect(chat.map((c) => [c.nickname, c.text])).toEqual([
+      ["Ana", "oi gente"],
+      ["Bia", "boa sorte"],
+    ]);
+    expect(chat[0].authorId).toBe(ids[0]);
+    expect(chat[0].sentAt).toBe(Date.parse("2026-10-05T12:34:00Z"));
+    expect(chat[0].id).not.toBe(chat[1].id);
+  });
+
+  it("rejects empty, too long, malformed and non-member messages", () => {
+    const { m, room, ids } = setup(2);
+    expect(m.sendChat(room.code, ids[0], "   ")).toEqual({ ok: false, error: "INVALID_PAYLOAD" });
+    expect(m.sendChat(room.code, ids[0], "a".repeat(MAX_CHAT_LENGTH + 1))).toEqual({
+      ok: false,
+      error: "INVALID_PAYLOAD",
+    });
+    expect(m.sendChat(room.code, ids[0], 42)).toEqual({ ok: false, error: "INVALID_PAYLOAD" });
+    expect(m.sendChat(room.code, "nobody", "oi")).toEqual({ ok: false, error: "NOT_IN_ROOM" });
+    expect(m.sendChat(room.code, ids[0], "a".repeat(MAX_CHAT_LENGTH))).toEqual({ ok: true });
+    expect(room.chat).toHaveLength(1);
+  });
+
+  it("keeps only the most recent messages", () => {
+    const { m, room, ids } = setup(2);
+    for (let i = 0; i < CHAT_HISTORY + 5; i++) m.sendChat(room.code, ids[i % 2], `msg ${i}`);
+    const chat = m.snapshot(room, ids[0]).chat;
+    expect(chat).toHaveLength(CHAT_HISTORY);
+    expect(chat[0].text).toBe("msg 5");
+    expect(chat.at(-1)!.text).toBe(`msg ${CHAT_HISTORY + 4}`);
+  });
+
+  it("is discarded with the room", () => {
+    const { m, room, ids } = setup(2);
+    m.sendChat(room.code, ids[0], "oi");
+    for (const id of ids) m.disconnect(room.code, id);
+    vi.advanceTimersByTime(EMPTY_ROOM_TTL_SECONDS * 1000);
+    expect(m.rooms.has(room.code)).toBe(false);
+    expect(m.sendChat(room.code, ids[0], "alguém?")).toEqual({ ok: false, error: "NOT_IN_ROOM" });
+    const again = m.createRoom("Ana");
+    if (!again.ok) throw new Error(again.error);
+    expect(m.snapshot(again.room, again.player.id).chat).toEqual([]);
   });
 });
 

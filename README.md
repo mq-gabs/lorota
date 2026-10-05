@@ -43,6 +43,9 @@ Small extensions that the spec's types didn't cover:
 - In the lobby, a disconnected player gives up their slot or nickname to someone new joining, and is dropped when
   the game starts.
 - Audio module also exposes `setMusicMood({ fast, ducked })` for the last-10-seconds speed-up and reveal ducking.
+- Room chat (the spec lists chat as out of scope): `chat:send { text }` event and `Snapshot.chat`, shown under
+  every in-room screen with each message's author and send time. The server keeps the last 50 messages
+  (`CHAT_HISTORY`, up to `MAX_CHAT_LENGTH` = 200 characters each) in memory and drops them when the room is deleted.
 
 ## Deploying
 

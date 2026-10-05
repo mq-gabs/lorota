@@ -84,6 +84,8 @@ These are documented in README "Additions beyond the spec". Keep them unless you
 - Events `room:leave` and `room:detached`; the newest tab for the same player wins.
 - Lobby only: a disconnected player gives up their slot or nickname to a newcomer and is dropped on game start.
 - Audio API extra: `setMusicMood({ fast, ducked })`.
+- Room chat: `chat:send` + `Snapshot.chat` (`ChatMessage` with server `sentAt`). Kept on the `Room`, capped at
+  `CHAT_HISTORY`, gone when the room is deleted. Rendered by `components/Chat.tsx` in every phase.
 
 ## Questions (`server/data/questions.json`)
 

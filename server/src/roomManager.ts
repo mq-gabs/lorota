@@ -2,8 +2,10 @@
 // it reports changes through callbacks and the socket layer turns them into events.
 import { randomUUID } from "node:crypto";
 import {
+  CHAT_HISTORY,
   EMPTY_ROOM_TTL_SECONDS,
   LOW_PLAYERS_TIMEOUT_SECONDS,
+  MAX_CHAT_LENGTH,
   MAX_NICKNAME_LENGTH,
   MAX_PLAYERS,
   MIN_PLAYERS,
@@ -15,7 +17,7 @@ import {
   charLength,
   normalize,
 } from "@lorota/shared";
-import type { ErrorCode, Phase, RevealedOption, RoomListItem, Snapshot } from "@lorota/shared";
+import type { ChatMessage, ErrorCode, Phase, RevealedOption, RoomListItem, Snapshot } from "@lorota/shared";
 import { buildOptions, buildReveal, randomId, resolveAnswers, scoreRound } from "./game";
 import type { Option, Rng } from "./game";
 import type { Question } from "./questions";
@@ -54,6 +56,9 @@ export interface Room {
   lastPhaseTimedOut: boolean;
   usedQuestionIds: Set<string>;
   nextJoinOrder: number;
+  /** Discarded together with the room. */
+  chat: ChatMessage[];
+  nextChatId: number;
   phaseTimer: ReturnType<typeof setTimeout> | null;
   lowPlayersTimer: ReturnType<typeof setTimeout> | null;
   emptyTimer: ReturnType<typeof setTimeout> | null;
@@ -112,6 +117,8 @@ export class RoomManager {
       lastPhaseTimedOut: false,
       usedQuestionIds: new Set(),
       nextJoinOrder: 0,
+      chat: [],
+      nextChatId: 0,
       phaseTimer: null,
       lowPlayersTimer: null,
       emptyTimer: null,
@@ -255,6 +262,25 @@ export class RoomManager {
     return { ok: true };
   }
 
+  sendChat(code: string, playerId: string, text: unknown): Result {
+    const room = this.rooms.get(code);
+    const player = room?.players.find((p) => p.id === playerId);
+    if (!room || !player) return fail("NOT_IN_ROOM");
+    if (typeof text !== "string") return fail("INVALID_PAYLOAD");
+    const clean = text.replace(/\s+/g, " ").trim();
+    if (!clean || charLength(clean) > MAX_CHAT_LENGTH) return fail("INVALID_PAYLOAD");
+    room.chat.push({
+      id: String(room.nextChatId++),
+      authorId: player.id,
+      nickname: player.nickname,
+      text: clean,
+      sentAt: Date.now(),
+    });
+    if (room.chat.length > CHAT_HISTORY) room.chat.splice(0, room.chat.length - CHAT_HISTORY);
+    this.notify(room);
+    return { ok: true };
+  }
+
   // ---------- views ----------
 
   listRooms(): RoomListItem[] {
@@ -302,6 +328,7 @@ export class RoomManager {
       revealed,
       serverNow: Date.now(),
       lastPhaseTimedOut: room.lastPhaseTimedOut,
+      chat: [...room.chat],
     };
   }
 

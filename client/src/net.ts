@@ -58,6 +58,11 @@ export function serverNow(): number {
   return Date.now() + clockOffset;
 }
 
+/** Converts a server epoch ms into this device's clock, for showing wall-clock times. */
+export function toLocalTime(serverMs: number): number {
+  return serverMs - clockOffset;
+}
+
 export function secondsLeft(phaseEndsAt: number | null): number {
   if (phaseEndsAt === null) return 0;
   return Math.max(0, Math.ceil((phaseEndsAt - serverNow()) / 1000));

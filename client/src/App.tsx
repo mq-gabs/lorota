@@ -2,6 +2,7 @@ import type { RoomListItem, Snapshot } from "@lorota/shared";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { playSfx, setMusic, setMusicMood, soundsFor } from "./audio";
 import { AudioToggles } from "./components/AudioToggles";
+import { Chat } from "./components/Chat";
 import { request, secondsLeft, session, socket, syncClock } from "./net";
 import { GameOver } from "./screens/GameOver";
 import { Home } from "./screens/Home";
@@ -197,6 +198,7 @@ export function App() {
       </header>
       {!connected && <div className="banner">{snapshot ? S.reconnecting : S.connecting}</div>}
       <main className="screen">{screen}</main>
+      {snapshot && !restoring && <Chat key={snapshot.roomCode} snapshot={snapshot} />}
     </div>
   );
 }

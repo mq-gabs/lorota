@@ -32,6 +32,15 @@ export interface RevealedOption {
   pointsEach: number; // per voter for TRUTH, per fooled player for LIE
 }
 
+/** Extension: a room chat message. Lives only as long as the room. */
+export interface ChatMessage {
+  id: string;
+  authorId: string;
+  nickname: string; // kept so messages survive the author leaving the lobby
+  text: string;
+  sentAt: number; // server epoch ms
+}
+
 export interface Snapshot {
   roomCode: string;
   phase: Phase;
@@ -50,6 +59,8 @@ export interface Snapshot {
   serverNow: number;
   /** Extension: true when the current phase began because the previous phase's timer ran out. */
   lastPhaseTimedOut: boolean;
+  /** Extension: the room's most recent chat messages, oldest first. */
+  chat: ChatMessage[];
 }
 
 export type ErrorCode =
@@ -82,6 +93,8 @@ export interface ClientToServerEvents {
   "lie:submit": (p: { text: string }, ack: (r: Ack) => void) => void;
   "vote:submit": (p: { optionId: string }, ack: (r: Ack) => void) => void;
   "game:playAgain": (p: object, ack: (r: Ack) => void) => void;
+  /** Extension: send a chat message to the room (any phase). */
+  "chat:send": (p: { text: string }, ack: (r: Ack) => void) => void;
 }
 
 export interface ServerToClientEvents {

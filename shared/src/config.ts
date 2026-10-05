@@ -18,3 +18,6 @@ export const EMPTY_ROOM_TTL_SECONDS = 5 * 60;
 export const MAX_RAW_TEXT_LENGTH = 500;
 /** Debounce for sending drafts while typing. */
 export const DRAFT_DEBOUNCE_MS = 300;
+/** Chat: max message length (code points) and how many recent messages a room keeps. */
+export const MAX_CHAT_LENGTH = 200;
+export const CHAT_HISTORY = 50;
