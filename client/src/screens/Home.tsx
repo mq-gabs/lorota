@@ -109,7 +109,7 @@ export function Home({ rooms, initialCode, notice, onCreate, onJoin }: Props) {
                     <span className="room-code">{r.roomCode}</span>
                     <span className="room-host">{S.roomOf(r.hostNickname)}</span>
                     <span className="room-meta">
-                      {S.playerCount(r.playerCount, r.maxPlayers)} ·{" "}
+                      {S.playerCount(r.playerCount, r.maxPlayers)} · {S.themes[r.theme]} ·{" "}
                       {r.state === "LOBBY" ? S.inLobby : S.playing}
                     </span>
                   </div>

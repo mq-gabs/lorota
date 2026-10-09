@@ -1,5 +1,5 @@
 // Every piece of text the player sees. Informal Brazilian Portuguese.
-import type { ErrorCode } from "@lorota/shared";
+import type { ErrorCode, Theme } from "@lorota/shared";
 
 export const S = {
   appName: "LOROTA",
@@ -38,6 +38,16 @@ export const S = {
   needMorePlayers: "Precisa de pelo menos 2 jogadores pra começar",
   waitingHost: "Esperando o dono da sala começar",
   leaveRoom: "Sair da sala",
+  theme: "Tema",
+
+  themes: {
+    geral: "Geral",
+    historia: "História",
+    esportes: "Esportes",
+    influenciadores: "Influenciadores",
+    musica: "Música",
+    filmes: "Filmes",
+  } satisfies Record<Theme, string>,
 
   // Escrita
   roundOf: (n: number, total: number) => `Rodada ${n} de ${total}`,

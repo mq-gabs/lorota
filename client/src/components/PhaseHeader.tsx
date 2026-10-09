@@ -5,7 +5,11 @@ import { Countdown } from "./Countdown";
 export function PhaseHeader({ snapshot, timer = true }: { snapshot: Snapshot; timer?: boolean }) {
   return (
     <div className="phase-header">
-      {snapshot.round && <span className="round">{S.roundOf(snapshot.round.number, snapshot.round.total)}</span>}
+      {snapshot.round && (
+        <span className="round">
+          {S.roundOf(snapshot.round.number, snapshot.round.total)} · {S.themes[snapshot.theme]}
+        </span>
+      )}
       {timer && <Countdown phaseEndsAt={snapshot.phaseEndsAt} />}
     </div>
   );

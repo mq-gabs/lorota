@@ -371,6 +371,37 @@ small {
   margin-right: auto;
 }
 
+.theme-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.theme-chip {
+  border: 2px solid var(--card-2);
+  border-radius: 999px;
+  padding: 8px 14px;
+  min-height: 40px;
+  font-weight: 800;
+  background: var(--card-2);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.theme-chip.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.theme-chip:disabled {
+  cursor: default;
+}
+
+.theme-chip:disabled:not(.selected) {
+  opacity: 0.55;
+}
+
 .offline {
   opacity: 0.55;
 }

@@ -21,3 +21,7 @@ export const DRAFT_DEBOUNCE_MS = 300;
 /** Chat: max message length (code points) and how many recent messages a room keeps. */
 export const MAX_CHAT_LENGTH = 200;
 export const CHAT_HISTORY = 50;
+
+/** Question themes a room can pick. "geral" draws from every question. */
+export const THEMES = ["geral", "historia", "esportes", "influenciadores", "musica", "filmes"] as const;
+export const DEFAULT_THEME: (typeof THEMES)[number] = "geral";

@@ -107,6 +107,13 @@ export function attachSockets(io: IO, questions: Question[]): RoomManager {
       reply(ack, { ok: true });
     });
 
+    socket.on("room:setTheme", (p, ack) => {
+      const s = session();
+      if (!s) return reply(ack, notInRoom);
+      if (!isObject(p)) return reply(ack, { ok: false, error: "INVALID_PAYLOAD" });
+      reply(ack, manager.setTheme(s.roomCode, s.playerId, p.theme));
+    });
+
     socket.on("game:start", (_p, ack) => {
       const s = session();
       reply(ack, s ? manager.startGame(s.roomCode, s.playerId) : notInRoom);

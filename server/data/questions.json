@@ -1,6 +1,7 @@
 [
   {
     "id": "q001",
+    "theme": "esportes",
     "text": "Em 1923, o jóquei Frank Hayes venceu uma corrida em Nova York mesmo estando ___.",
     "answer": "morto",
     "source": "https://en.wikipedia.org/wiki/Frank_Hayes_(jockey)",
@@ -8,6 +9,7 @@
   },
   {
     "id": "q002",
+    "theme": "historia",
     "text": "Em 1518, em Estrasburgo, dezenas de pessoas passaram semanas sem conseguir parar de ___.",
     "answer": "dançar",
     "source": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518",
@@ -15,6 +17,7 @@
   },
   {
     "id": "q003",
+    "theme": "historia",
     "text": "Em 1919, uma onda gigante de ___ invadiu as ruas de Boston e matou 21 pessoas.",
     "answer": "melaço",
     "source": "https://en.wikipedia.org/wiki/Great_Molasses_Flood",
@@ -22,6 +25,7 @@
   },
   {
     "id": "q004",
+    "theme": "historia",
     "text": "No ano de 897, o papa Estêvão VI levou a julgamento o ___ do papa Formoso.",
     "answer": "cadáver",
     "source": "https://en.wikipedia.org/wiki/Cadaver_Synod",
@@ -29,6 +33,7 @@
   },
   {
     "id": "q005",
+    "theme": "geral",
     "text": "As fezes do vombate, um marsupial australiano, têm formato de ___.",
     "answer": "cubo",
     "source": "https://en.wikipedia.org/wiki/Wombat",
@@ -36,6 +41,7 @@
   },
   {
     "id": "q006",
+    "theme": "historia",
     "text": "Parte das cinzas do químico Fredric Baur foi enterrada dentro de sua invenção mais famosa: a ___.",
     "answer": "lata de Pringles",
     "source": "https://en.wikipedia.org/wiki/Fredric_Baur",
@@ -43,6 +49,7 @@
   },
   {
     "id": "q007",
+    "theme": "historia",
     "text": "O animal nacional da Escócia é o ___.",
     "answer": "unicórnio",
     "source": "https://en.wikipedia.org/wiki/National_symbols_of_Scotland",
@@ -50,6 +57,7 @@
   },
   {
     "id": "q008",
+    "theme": "esportes",
     "text": "De 1900 a 1920, o ___ foi uma modalidade dos Jogos Olímpicos.",
     "answer": "cabo de guerra",
     "source": "Wikipedia (en): Tug of war at the Summer Olympics",
@@ -57,6 +65,7 @@
   },
   {
     "id": "q009",
+    "theme": "historia",
     "text": "Fundada em 1889, a Nintendo começou fabricando ___.",
     "answer": "cartas de baralho",
     "source": "Wikipedia (en): History of Nintendo",
@@ -64,6 +73,7 @@
   },
   {
     "id": "q010",
+    "theme": "historia",
     "text": "O plástico-bolha foi inventado em 1957 para ser vendido como ___.",
     "answer": "papel de parede",
     "source": "https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/",
@@ -71,6 +81,7 @@
   },
   {
     "id": "q011",
+    "theme": "historia",
     "text": "Antes de fazer carros esportivos, a Lamborghini fabricava ___.",
     "answer": "tratores",
     "source": "Wikipedia (en): Lamborghini Trattori",
@@ -78,6 +89,7 @@
   },
   {
     "id": "q012",
+    "theme": "esportes",
     "text": "Na maratona olímpica de 1904, o primeiro a cruzar a linha de chegada tinha feito parte do percurso de ___.",
     "answer": "carro",
     "source": "https://en.wikipedia.org/wiki/Frederick_Lorz",
@@ -85,6 +97,7 @@
   },
   {
     "id": "q013",
+    "theme": "historia",
     "text": "Nos anos 1940, um frango chamado Mike viveu 18 meses sem ___.",
     "answer": "cabeça",
     "source": "Wikipedia (en): Mike the Headless Chicken",
@@ -92,6 +105,7 @@
   },
   {
     "id": "q014",
+    "theme": "historia",
     "text": "Em 1962, escolas da Tanganica (atual Tanzânia) fecharam por causa de uma epidemia de ___.",
     "answer": "riso",
     "source": "Wikipedia (en): Tanganyika laughter epidemic",
@@ -99,6 +113,7 @@
   },
   {
     "id": "q015",
+    "theme": "historia",
     "text": "Em 1925, o golpista Victor Lustig \"vendeu\" a ___ para um comerciante de sucata.",
     "answer": "Torre Eiffel",
     "source": "Wikipedia (en): Victor Lustig",
@@ -106,6 +121,7 @@
   },
   {
     "id": "q016",
+    "theme": "historia",
     "text": "Em 1967, o primeiro-ministro da Austrália, Harold Holt, desapareceu para sempre enquanto ___.",
     "answer": "nadava",
     "source": "Wikipedia (en): Disappearance of Harold Holt",
@@ -113,6 +129,7 @@
   },
   {
     "id": "q017",
+    "theme": "historia",
     "text": "Em 1386, na cidade francesa de Falaise, um ___ foi julgado e enforcado por assassinato.",
     "answer": "porco",
     "source": "https://en.wikipedia.org/wiki/Animal_trial",
@@ -120,6 +137,7 @@
   },
   {
     "id": "q018",
+    "theme": "historia",
     "text": "Apesar do nome, o chapéu-panamá é originário do ___.",
     "answer": "Equador",
     "source": "Wikipedia (en): Panama hat",
@@ -127,6 +145,7 @@
   },
   {
     "id": "q019",
+    "theme": "historia",
     "text": "Em 1965, o astronauta John Young levou escondido para o espaço um ___.",
     "answer": "sanduíche",
     "source": "Wikipedia (en): Gemini 3",
@@ -134,6 +153,7 @@
   },
   {
     "id": "q020",
+    "theme": "historia",
     "text": "O primeiro item vendido no eBay, em 1995, estava quebrado. Era uma ___.",
     "answer": "caneta laser",
     "source": "https://time.com/4018841/first-item-sold-listed-ebay/",
@@ -141,6 +161,7 @@
   },
   {
     "id": "q021",
+    "theme": "historia",
     "text": "A primeira webcam do mundo, criada na Universidade de Cambridge, servia para vigiar uma ___.",
     "answer": "cafeteira",
     "source": "Wikipedia (en): Trojan Room coffee pot",
@@ -148,6 +169,7 @@
   },
   {
     "id": "q022",
+    "theme": "historia",
     "text": "O rei Carlos VI da França acreditava que seu corpo era feito de ___.",
     "answer": "vidro",
     "source": "https://en.wikipedia.org/wiki/Glass_delusion",
@@ -155,6 +177,7 @@
   },
   {
     "id": "q023",
+    "theme": "geral",
     "text": "Thimphu, capital do Butão, é conhecida por ser uma capital sem nenhum ___.",
     "answer": "semáforo",
     "source": "https://www.bhutanwiki.org/articles/thimphu",
@@ -162,6 +185,7 @@
   },
   {
     "id": "q024",
+    "theme": "esportes",
     "text": "No campeonato mundial de carregar a esposa, na Finlândia, o prêmio é o peso da esposa em ___.",
     "answer": "cerveja",
     "source": "https://en.wikipedia.org/wiki/Wife-carrying",
@@ -169,6 +193,7 @@
   },
   {
     "id": "q025",
+    "theme": "historia",
     "text": "Em 1959, um ___ recebeu cerca de 100 mil votos para vereador em São Paulo.",
     "answer": "rinoceronte",
     "source": "https://pt.wikipedia.org/wiki/Rinoceronte_Cacareco",
@@ -176,6 +201,7 @@
   },
   {
     "id": "q026",
+    "theme": "historia",
     "text": "Entre 1961 e 1963, Brasil e França quase entraram em guerra por causa da pesca de ___.",
     "answer": "lagosta",
     "source": "https://en.wikipedia.org/wiki/Lobster_War",
@@ -183,6 +209,7 @@
   },
   {
     "id": "q027",
+    "theme": "historia",
     "text": "Em 1928, Henry Ford fundou uma cidade na Amazônia para produzir ___.",
     "answer": "borracha",
     "source": "Wikipedia (pt): Fordlândia",
@@ -190,6 +217,7 @@
   },
   {
     "id": "q028",
+    "theme": "esportes",
     "text": "Para pagar a viagem às Olimpíadas de 1932, os atletas brasileiros tinham de vender ___ nos portos pelo caminho.",
     "answer": "café",
     "source": "https://agenciabrasil.ebc.com.br/geral/noticia/2016-02/familia-do-homem-de-ferro-dos-jogos-de-1932-cobra-reconhecimento-do-atleta",
@@ -197,6 +225,7 @@
   },
   {
     "id": "q029",
+    "theme": "historia",
     "text": "Em março de 1969, a capital do Brasil foi transferida por três dias para ___.",
     "answer": "Curitiba",
     "source": "https://www.gazetadopovo.com.br/politica/parana/curitiba-ja-foi-a-capital-do-brasil-por-tres-dias-48zj4cby49uxdh9f6ycemrfle/",
@@ -204,6 +233,7 @@
   },
   {
     "id": "q030",
+    "theme": "geral",
     "text": "A Ilha da Queimada Grande, no litoral de São Paulo, é fechada ao público por causa de suas milhares de ___.",
     "answer": "cobras",
     "source": "https://en.wikipedia.org/wiki/Ilha_da_Queimada_Grande",
@@ -211,6 +241,7 @@
   },
   {
     "id": "q031",
+    "theme": "historia",
     "text": "Em 1932, o exército da Austrália travou uma guerra contra ___ e perdeu.",
     "answer": "emus",
     "source": "Wikipedia (en): Emu War",
@@ -218,6 +249,7 @@
   },
   {
     "id": "q032",
+    "theme": "historia",
     "text": "Nos anos 1830, o ___ foi vendido nos Estados Unidos como remédio para indigestão.",
     "answer": "ketchup",
     "source": "Wikipedia (en): Ketchup",
@@ -225,6 +257,7 @@
   },
   {
     "id": "q033",
+    "theme": "historia",
     "text": "A Universidade de Oxford é mais antiga que o Império ___.",
     "answer": "Asteca",
     "source": "Wikipedia (en): University of Oxford",
@@ -232,6 +265,7 @@
   },
   {
     "id": "q034",
+    "theme": "historia",
     "text": "Cleópatra viveu mais perto da chegada do homem à Lua do que da construção da ___.",
     "answer": "Grande Pirâmide",
     "source": "Wikipedia (en): Cleopatra",
@@ -239,6 +273,7 @@
   },
   {
     "id": "q035",
+    "theme": "historia",
     "text": "Em 1807, durante uma caçada, Napoleão foi atacado por centenas de ___.",
     "answer": "coelhos",
     "source": "Wikipedia (en): Napoleon (rabbit attack anecdote, memoirs of Paul Thiébault)",
@@ -246,6 +281,7 @@
   },
   {
     "id": "q036",
+    "theme": "historia",
     "text": "Em 1896, a guerra entre o Reino Unido e ___ durou menos de 45 minutos.",
     "answer": "Zanzibar",
     "source": "Wikipedia (en): Anglo-Zanzibar War",
@@ -253,6 +289,7 @@
   },
   {
     "id": "q037",
+    "theme": "historia",
     "text": "No século I, Heron de Alexandria inventou uma máquina automática que vendia ___.",
     "answer": "água benta",
     "source": "Wikipedia (en): Vending machine",
@@ -260,6 +297,7 @@
   },
   {
     "id": "q038",
+    "theme": "geral",
     "text": "Para a botânica, a banana é classificada como uma ___.",
     "answer": "baga",
     "source": "Wikipedia (en): Banana",
@@ -267,6 +305,7 @@
   },
   {
     "id": "q039",
+    "theme": "geral",
     "text": "Em Vênus, um ___ dura mais do que um ano.",
     "answer": "dia",
     "source": "Wikipedia (en): Venus",
@@ -274,6 +313,7 @@
   },
   {
     "id": "q040",
+    "theme": "geral",
     "text": "Os coalas têm ___ quase idênticas às dos humanos.",
     "answer": "impressões digitais",
     "source": "Wikipedia (en): Koala",
@@ -281,6 +321,7 @@
   },
   {
     "id": "q041",
+    "theme": "historia",
     "text": "Em 1975, cerca de 90% das mulheres da ___ entraram em greve por um dia.",
     "answer": "Islândia",
     "source": "Wikipedia (en): 1975 Icelandic women's strike",
@@ -288,6 +329,7 @@
   },
   {
     "id": "q042",
+    "theme": "historia",
     "text": "Abraham Lincoln faz parte do Hall da Fama da ___ dos Estados Unidos.",
     "answer": "luta livre",
     "source": "Wikipedia (en): National Wrestling Hall of Fame and Museum",
@@ -295,6 +337,7 @@
   },
   {
     "id": "q043",
+    "theme": "historia",
     "text": "Em 1698, o czar Pedro, o Grande, criou na Rússia um imposto sobre ___.",
     "answer": "barbas",
     "source": "Wikipedia (en): Beard tax",
@@ -302,6 +345,7 @@
   },
   {
     "id": "q044",
+    "theme": "historia",
     "text": "A pizza havaiana foi inventada no ___.",
     "answer": "Canadá",
     "source": "Wikipedia (en): Hawaiian pizza",
@@ -309,6 +353,7 @@
   },
   {
     "id": "q045",
+    "theme": "geral",
     "text": "O maior deserto do mundo é a ___.",
     "answer": "Antártida",
     "source": "Wikipedia (en): List of deserts by area",
@@ -316,6 +361,7 @@
   },
   {
     "id": "q046",
+    "theme": "historia",
     "text": "Em 1904, Louis Cartier criou um relógio de pulso para que ___ pudesse ver as horas enquanto voava.",
     "answer": "Santos Dumont",
     "source": "Wikipedia (en): Cartier Santos",
@@ -323,6 +369,7 @@
   },
   {
     "id": "q047",
+    "theme": "historia",
     "text": "Na Exposição do Centenário de 1876, nos EUA, Dom Pedro II testou o recém-inventado ___ de Graham Bell.",
     "answer": "telefone",
     "source": "Wikipedia (en): Pedro II of Brazil",
@@ -330,6 +377,7 @@
   },
   {
     "id": "q048",
+    "theme": "historia",
     "text": "Em 1904, o Rio de Janeiro viveu uma revolta popular contra a vacinação obrigatória contra ___.",
     "answer": "varíola",
     "source": "Wikipedia (pt): Revolta da Vacina",
@@ -337,6 +385,7 @@
   },
   {
     "id": "q049",
+    "theme": "historia",
     "text": "Em 2008, a Guarda Real da Noruega concedeu o título de cavaleiro a um ___.",
     "answer": "pinguim",
     "source": "Wikipedia (en): Nils Olav",
@@ -344,6 +393,7 @@
   },
   {
     "id": "q050",
+    "theme": "historia",
     "text": "O guarda-florestal americano Roy Sullivan sobreviveu a ___ raios ao longo da vida.",
     "answer": "sete",
     "source": "Wikipedia (en): Roy Sullivan",
@@ -351,6 +401,7 @@
   },
   {
     "id": "q051",
+    "theme": "historia",
     "text": "Em 1893, a Suprema Corte dos EUA decidiu que, para fins de impostos, o tomate é uma ___.",
     "answer": "hortaliça",
     "source": "Wikipedia (en): Nix v. Hedden",
@@ -358,6 +409,7 @@
   },
   {
     "id": "q052",
+    "theme": "historia",
     "text": "O cão Hachiko esperou o dono, que já tinha morrido, numa estação de trem de Tóquio por cerca de ___ anos.",
     "answer": "nove",
     "source": "Wikipedia (en): Hachikō",
@@ -365,6 +417,7 @@
   },
   {
     "id": "q053",
+    "theme": "esportes",
     "text": "Na Copa do Mundo de 2010, um ___ chamado Paul ficou famoso por prever os resultados dos jogos.",
     "answer": "polvo",
     "source": "Wikipedia (en): Paul the Octopus",
@@ -372,6 +425,7 @@
   },
   {
     "id": "q054",
+    "theme": "esportes",
     "text": "Nos Jogos Olímpicos de 1900, em Paris, houve uma prova de tiro em ___ vivos.",
     "answer": "pombos",
     "source": "Wikipedia (en): Shooting at the 1900 Summer Olympics",
@@ -379,6 +433,7 @@
   },
   {
     "id": "q055",
+    "theme": "historia",
     "text": "Na Roma Antiga, a ___ era usada para lavar roupa e até para clarear os dentes.",
     "answer": "urina",
     "source": "Wikipedia (en): Urine (history of uses)",
@@ -386,6 +441,7 @@
   },
   {
     "id": "q056",
+    "theme": "geral",
     "text": "O olho do avestruz é maior que o seu ___.",
     "answer": "cérebro",
     "source": "Wikipedia (en): Common ostrich",
@@ -393,6 +449,7 @@
   },
   {
     "id": "q057",
+    "theme": "historia",
     "text": "O refrigerante ___ foi criado na Alemanha nazista, quando faltou xarope de Coca-Cola.",
     "answer": "Fanta",
     "source": "Wikipedia (en): Fanta",
@@ -400,6 +457,7 @@
   },
   {
     "id": "q058",
+    "theme": "historia",
     "text": "O Hino Nacional brasileiro passou quase um século sem ___ oficial.",
     "answer": "letra",
     "source": "Wikipedia (pt): Hino Nacional Brasileiro",
@@ -407,6 +465,7 @@
   },
   {
     "id": "q059",
+    "theme": "geral",
     "text": "O tiranossauro viveu mais perto de nós no tempo do que do ___.",
     "answer": "estegossauro",
     "source": "Wikipedia (en): Stegosaurus",
@@ -414,9 +473,1018 @@
   },
   {
     "id": "q060",
+    "theme": "geral",
     "text": "Os tubarões existem há mais tempo do que as ___.",
     "answer": "árvores",
     "source": "Wikipedia (en): Shark (evolution)",
+    "checked": false
+  },
+  {
+    "id": "q061",
+    "theme": "esportes",
+    "text": "Na Copa de 1950, a derrota do Brasil para o Uruguai dentro do Maracanã ficou conhecida como ___.",
+    "answer": "Maracanaço",
+    "source": "Wikipedia (pt): Maracanaço",
+    "checked": false
+  },
+  {
+    "id": "q062",
+    "theme": "esportes",
+    "text": "Em 1966, a taça Jules Rimet foi roubada na Inglaterra e encontrada por um cachorro chamado ___.",
+    "answer": "Pickles",
+    "source": "Wikipedia (en): Pickles (dog)",
+    "checked": false
+  },
+  {
+    "id": "q063",
+    "theme": "esportes",
+    "text": "Em 1983, a taça Jules Rimet foi roubada da sede da CBF e nunca mais apareceu. A polícia acredita que ela foi ___.",
+    "answer": "derretida",
+    "source": "Wikipedia (pt): Taça Jules Rimet",
+    "checked": false
+  },
+  {
+    "id": "q064",
+    "theme": "esportes",
+    "text": "O 7 a 1 da Alemanha sobre o Brasil, na Copa de 2014, aconteceu no Mineirão, em ___.",
+    "answer": "Belo Horizonte",
+    "source": "Wikipedia (pt): Brasil 1–7 Alemanha",
+    "checked": false
+  },
+  {
+    "id": "q065",
+    "theme": "esportes",
+    "text": "Na Copa de 2002, Ronaldo entrou em campo com um corte de cabelo apelidado de ___.",
+    "answer": "Cascão",
+    "source": "Wikipedia (pt): Ronaldo Nazário",
+    "checked": false
+  },
+  {
+    "id": "q066",
+    "theme": "esportes",
+    "text": "Romário comemorou seu milésimo gol em 2007, contra o Sport, marcando de ___.",
+    "answer": "pênalti",
+    "source": "Wikipedia (pt): Romário",
+    "checked": false
+  },
+  {
+    "id": "q067",
+    "theme": "esportes",
+    "text": "O milésimo gol de Pelé, em 1969 no Maracanã, foi marcado contra o ___.",
+    "answer": "Vasco",
+    "source": "Wikipedia (pt): Milésimo gol de Pelé",
+    "checked": false
+  },
+  {
+    "id": "q068",
+    "theme": "esportes",
+    "text": "Em 1989, no Maracanã, o goleiro chileno Roberto Rojas fingiu ter sido atingido por um sinalizador e se cortou com uma ___ escondida na luva.",
+    "answer": "gilete",
+    "source": "Wikipedia (pt): Roberto Rojas",
+    "checked": false
+  },
+  {
+    "id": "q069",
+    "theme": "esportes",
+    "text": "Sócrates, craque do Corinthians e da Seleção, era formado em ___.",
+    "answer": "Medicina",
+    "source": "Wikipedia (pt): Sócrates (futebolista)",
+    "checked": false
+  },
+  {
+    "id": "q070",
+    "theme": "esportes",
+    "text": "Marta é a maior artilheira da história das Copas do Mundo, somando homens e mulheres, com ___ gols.",
+    "answer": "17",
+    "source": "Wikipedia (pt): Marta (futebolista)",
+    "checked": false
+  },
+  {
+    "id": "q071",
+    "theme": "esportes",
+    "text": "Na Copa de 2018, uma TV suíça calculou que Neymar passou cerca de 14 minutos ___ em quatro jogos.",
+    "answer": "caído no chão",
+    "source": "Wikipedia (en): Neymar (2018 FIFA World Cup)",
+    "checked": false
+  },
+  {
+    "id": "q072",
+    "theme": "esportes",
+    "text": "Rogério Ceni, goleiro do São Paulo, marcou ___ gols na carreira, recorde para goleiros.",
+    "answer": "131",
+    "source": "Wikipedia (pt): Rogério Ceni",
+    "checked": false
+  },
+  {
+    "id": "q073",
+    "theme": "esportes",
+    "text": "Em 2002, em Madagascar, um jogo terminou 149 a 0 porque um time só fez ___ em protesto contra a arbitragem.",
+    "answer": "gols contra",
+    "source": "Wikipedia (en): AS Adema 149–0 SO l'Emyrne",
+    "checked": false
+  },
+  {
+    "id": "q074",
+    "theme": "esportes",
+    "text": "Depois de vencer a Copa América de 1997, Zagallo gritou para as câmeras: \"Vocês vão ter que me ___!\"",
+    "answer": "engolir",
+    "source": "Wikipedia (pt): Mário Zagallo",
+    "checked": false
+  },
+  {
+    "id": "q075",
+    "theme": "esportes",
+    "text": "Horas antes da final da Copa de 1998, Ronaldo teve uma ___ e mesmo assim entrou em campo.",
+    "answer": "convulsão",
+    "source": "Wikipedia (pt): Final da Copa do Mundo FIFA de 1998",
+    "checked": false
+  },
+  {
+    "id": "q076",
+    "theme": "esportes",
+    "text": "De 1941 a 1979, uma lei proibia as mulheres de jogar ___ no Brasil.",
+    "answer": "futebol",
+    "source": "Wikipedia (pt): Futebol feminino no Brasil",
+    "checked": false
+  },
+  {
+    "id": "q077",
+    "theme": "esportes",
+    "text": "A camisa amarela da Seleção foi criada em 1953 por Aldyr Schlee, que na final de 1950 torcia para o ___.",
+    "answer": "Uruguai",
+    "source": "Wikipedia (pt): Aldyr Garcia Schlee",
+    "checked": false
+  },
+  {
+    "id": "q078",
+    "theme": "esportes",
+    "text": "O mascote da Copa de 2014, um tatu-bola, se chamava ___.",
+    "answer": "Fuleco",
+    "source": "Wikipedia (pt): Fuleco",
+    "checked": false
+  },
+  {
+    "id": "q079",
+    "theme": "esportes",
+    "text": "Pelé disputou ___ Copas do Mundo e foi campeão em três delas.",
+    "answer": "quatro",
+    "source": "Wikipedia (pt): Pelé",
+    "checked": false
+  },
+  {
+    "id": "q080",
+    "theme": "esportes",
+    "text": "Em 1894, Charles Miller voltou da Inglaterra para São Paulo trazendo duas bolas, uniformes, um livro de regras e uma ___.",
+    "answer": "bomba de ar",
+    "source": "Wikipedia (pt): Charles Miller",
+    "checked": false
+  },
+  {
+    "id": "q081",
+    "theme": "esportes",
+    "text": "O saque \"Jornada nas Estrelas\", jogado altíssimo no vôlei, foi criado pelo brasileiro ___.",
+    "answer": "Bernard",
+    "source": "Wikipedia (pt): Bernard Rajzman",
+    "checked": false
+  },
+  {
+    "id": "q082",
+    "theme": "esportes",
+    "text": "Em 1996, Jacqueline e Sandra levaram o ouro no vôlei de praia em Atlanta. Foi o primeiro ouro olímpico de ___ brasileiras.",
+    "answer": "mulheres",
+    "source": "Wikipedia (pt): Jacqueline Silva",
+    "checked": false
+  },
+  {
+    "id": "q083",
+    "theme": "esportes",
+    "text": "Nos Jogos do Rio, em 2016, a arena do vôlei de praia foi montada na praia de ___.",
+    "answer": "Copacabana",
+    "source": "Wikipedia (pt): Voleibol de praia nos Jogos Olímpicos de Verão de 2016",
+    "checked": false
+  },
+  {
+    "id": "q084",
+    "theme": "esportes",
+    "text": "A seleção feminina de vôlei foi campeã olímpica em Pequim, em 2008, e de novo em ___.",
+    "answer": "Londres",
+    "source": "Wikipedia (pt): Seleção Brasileira de Voleibol Feminino",
+    "checked": false
+  },
+  {
+    "id": "q085",
+    "theme": "esportes",
+    "text": "Na maratona olímpica de 2004, o brasileiro Vanderlei Cordeiro de Lima liderava quando foi agarrado por um ___.",
+    "answer": "padre irlandês",
+    "source": "Wikipedia (pt): Vanderlei Cordeiro de Lima",
+    "checked": false
+  },
+  {
+    "id": "q086",
+    "theme": "esportes",
+    "text": "A Corrida de São Silvestre, em São Paulo, acontece todo ano no dia ___.",
+    "answer": "31 de dezembro",
+    "source": "Wikipedia (pt): Corrida Internacional de São Silvestre",
+    "checked": false
+  },
+  {
+    "id": "q087",
+    "theme": "esportes",
+    "text": "Em 2019, em Viena, Eliud Kipchoge correu uma maratona em menos de ___ horas.",
+    "answer": "duas",
+    "source": "Wikipedia (en): Ineos 1:59 Challenge",
+    "checked": false
+  },
+  {
+    "id": "q088",
+    "theme": "esportes",
+    "text": "Ayrton Senna venceu o GP do Brasil de 1991 com o carro preso na ___ marcha.",
+    "answer": "sexta",
+    "source": "Wikipedia (pt): Grande Prêmio do Brasil de 1991",
+    "checked": false
+  },
+  {
+    "id": "q089",
+    "theme": "esportes",
+    "text": "No GP de Singapura de 2008, Nelsinho Piquet bateu o carro ___ para ajudar Fernando Alonso a vencer.",
+    "answer": "de propósito",
+    "source": "Wikipedia (pt): Caso Crashgate",
+    "checked": false
+  },
+  {
+    "id": "q090",
+    "theme": "esportes",
+    "text": "No GP da Áustria de 2002, Rubens Barrichello liderava, mas por ordem da Ferrari deixou ___ vencer na última curva.",
+    "answer": "Schumacher",
+    "source": "Wikipedia (pt): Grande Prêmio da Áustria de 2002",
+    "checked": false
+  },
+  {
+    "id": "q091",
+    "theme": "esportes",
+    "text": "Ao vencer as 500 Milhas de Indianápolis de 1993, Emerson Fittipaldi quebrou a tradição e bebeu ___ em vez de leite.",
+    "answer": "suco de laranja",
+    "source": "Wikipedia (en): 1993 Indianapolis 500",
+    "checked": false
+  },
+  {
+    "id": "q092",
+    "theme": "esportes",
+    "text": "O nome oficial de Interlagos é Autódromo José Carlos ___.",
+    "answer": "Pace",
+    "source": "Wikipedia (pt): Autódromo José Carlos Pace",
+    "checked": false
+  },
+  {
+    "id": "q093",
+    "theme": "esportes",
+    "text": "Em 2022, Lewis Hamilton recebeu o título de cidadão honorário do ___.",
+    "answer": "Brasil",
+    "source": "Wikipedia (pt): Lewis Hamilton",
+    "checked": false
+  },
+  {
+    "id": "q094",
+    "theme": "influenciadores",
+    "text": "Em 2022, o streamer Casimiro transmitiu jogos da Copa do Mundo ao vivo no seu canal, a ___.",
+    "answer": "CazéTV",
+    "source": "Wikipedia (pt): CazéTV",
+    "checked": false
+  },
+  {
+    "id": "q095",
+    "theme": "influenciadores",
+    "text": "O humorista Whindersson Nunes nasceu no estado do ___.",
+    "answer": "Piauí",
+    "source": "Wikipedia (pt): Whindersson Nunes",
+    "checked": false
+  },
+  {
+    "id": "q096",
+    "theme": "influenciadores",
+    "text": "Em 2022, Whindersson Nunes subiu num ringue de boxe para enfrentar o ex-campeão mundial ___.",
+    "answer": "Popó",
+    "source": "Wikipedia (pt): Whindersson Nunes",
+    "checked": false
+  },
+  {
+    "id": "q097",
+    "theme": "influenciadores",
+    "text": "Em 2019, Felipe Neto comprou e distribuiu 14 mil livros com temática LGBT depois de uma tentativa de censura na Bienal do ___.",
+    "answer": "Rio de Janeiro",
+    "source": "Wikipedia (pt): Felipe Neto",
+    "checked": false
+  },
+  {
+    "id": "q098",
+    "theme": "influenciadores",
+    "text": "Antes da fama, Felipe Neto viralizou com um vídeo detonando a saga ___.",
+    "answer": "Crepúsculo",
+    "source": "Wikipedia (pt): Felipe Neto",
+    "checked": false
+  },
+  {
+    "id": "q099",
+    "theme": "influenciadores",
+    "text": "Luccas Neto ficou famoso entre os adultos por um vídeo em que tomava banho numa banheira de ___.",
+    "answer": "Nutella",
+    "source": "Wikipedia (pt): Luccas Neto",
+    "checked": false
+  },
+  {
+    "id": "q100",
+    "theme": "influenciadores",
+    "text": "Em 2025, Virginia Fonseca foi chamada para depor no Senado na CPI das ___.",
+    "answer": "Bets",
+    "source": "Wikipedia (pt): CPI das Bets",
+    "checked": false
+  },
+  {
+    "id": "q101",
+    "theme": "influenciadores",
+    "text": "A marca de cosméticos de Virginia Fonseca se chama ___.",
+    "answer": "WePink",
+    "source": "Wikipedia (pt): Virginia Fonseca",
+    "checked": false
+  },
+  {
+    "id": "q102",
+    "theme": "influenciadores",
+    "text": "Carlinhos Maia ficou famoso mostrando nos stories a rotina da sua ___, em Penedo (AL).",
+    "answer": "vila",
+    "source": "Wikipedia (pt): Carlinhos Maia",
+    "checked": false
+  },
+  {
+    "id": "q103",
+    "theme": "influenciadores",
+    "text": "A festa de aniversário anual da influenciadora Gkay, cheia de famosos, é chamada de ___.",
+    "answer": "Farofa",
+    "source": "Wikipedia (pt): Gkay",
+    "checked": false
+  },
+  {
+    "id": "q104",
+    "theme": "influenciadores",
+    "text": "Bianca Andrade, a Boca Rosa, começou gravando tutoriais de maquiagem no Complexo da ___, no Rio.",
+    "answer": "Maré",
+    "source": "Wikipedia (pt): Bianca Andrade",
+    "checked": false
+  },
+  {
+    "id": "q105",
+    "theme": "influenciadores",
+    "text": "Antes de vencer o BBB 21, Juliette trabalhava como ___ em João Pessoa.",
+    "answer": "maquiadora",
+    "source": "Wikipedia (pt): Juliette Freire",
+    "checked": false
+  },
+  {
+    "id": "q106",
+    "theme": "influenciadores",
+    "text": "Em 2021, MrBeast recriou na vida real a série ___, com 456 participantes.",
+    "answer": "Round 6",
+    "source": "Wikipedia (en): MrBeast",
+    "checked": false
+  },
+  {
+    "id": "q107",
+    "theme": "influenciadores",
+    "text": "Num de seus vídeos, MrBeast passou 50 horas enterrado vivo dentro de um ___.",
+    "answer": "caixão",
+    "source": "Wikipedia (en): MrBeast",
+    "checked": false
+  },
+  {
+    "id": "q108",
+    "theme": "influenciadores",
+    "text": "Com a campanha #TeamTrees, MrBeast e outros youtubers juntaram dinheiro para plantar ___ milhões de árvores.",
+    "answer": "vinte",
+    "source": "Wikipedia (en): Team Trees",
+    "checked": false
+  },
+  {
+    "id": "q109",
+    "theme": "influenciadores",
+    "text": "Em 2016, Kim Kardashian foi assaltada num hotel em ___ por uma quadrilha de ladrões idosos.",
+    "answer": "Paris",
+    "source": "Wikipedia (en): Kim Kardashian Paris robbery",
+    "checked": false
+  },
+  {
+    "id": "q110",
+    "theme": "influenciadores",
+    "text": "Khaby Lame virou o tiktoker mais seguido do mundo sem dizer nenhuma ___ nos vídeos.",
+    "answer": "palavra",
+    "source": "Wikipedia (en): Khaby Lame",
+    "checked": false
+  },
+  {
+    "id": "q111",
+    "theme": "influenciadores",
+    "text": "Logan Paul e KSI, que eram rivais, se juntaram para lançar a bebida ___.",
+    "answer": "Prime",
+    "source": "Wikipedia (en): Prime (drink)",
+    "checked": false
+  },
+  {
+    "id": "q112",
+    "theme": "influenciadores",
+    "text": "Em 2017, Logan Paul foi duramente criticado por um vídeo gravado na floresta de Aokigahara, no ___.",
+    "answer": "Japão",
+    "source": "Wikipedia (en): Logan Paul",
+    "checked": false
+  },
+  {
+    "id": "q113",
+    "theme": "influenciadores",
+    "text": "Em 2019, PewDiePie travou uma guerra de inscritos com o canal indiano ___.",
+    "answer": "T-Series",
+    "source": "Wikipedia (en): PewDiePie vs T-Series",
+    "checked": false
+  },
+  {
+    "id": "q114",
+    "theme": "influenciadores",
+    "text": "O streamer Gaules ficou famoso transmitindo partidas de ___.",
+    "answer": "Counter-Strike",
+    "source": "Wikipedia (pt): Gaules",
+    "checked": false
+  },
+  {
+    "id": "q115",
+    "theme": "influenciadores",
+    "text": "Nobru foi campeão mundial em 2019 jogando ___.",
+    "answer": "Free Fire",
+    "source": "Wikipedia (pt): Nobru",
+    "checked": false
+  },
+  {
+    "id": "q116",
+    "theme": "influenciadores",
+    "text": "A influenciadora Thaynara OG, conhecida pelos stories de humor, é do estado do ___.",
+    "answer": "Maranhão",
+    "source": "Wikipedia (pt): Thaynara OG",
+    "checked": false
+  },
+  {
+    "id": "q117",
+    "theme": "influenciadores",
+    "text": "Em 2015, Jout Jout viralizou com o vídeo \"Não tira o ___ não\", sobre relacionamentos abusivos.",
+    "answer": "batom vermelho",
+    "source": "Wikipedia (pt): Jout Jout",
+    "checked": false
+  },
+  {
+    "id": "q118",
+    "theme": "influenciadores",
+    "text": "Kéfera Buchmann ficou famosa com o canal ___.",
+    "answer": "5inco Minutos",
+    "source": "Wikipedia (pt): Kéfera Buchmann",
+    "checked": false
+  },
+  {
+    "id": "q119",
+    "theme": "influenciadores",
+    "text": "O streamer americano IShowSpeed é famoso por imitar a comemoração \"___\" de Cristiano Ronaldo.",
+    "answer": "Siuuu",
+    "source": "Wikipedia (en): IShowSpeed",
+    "checked": false
+  },
+  {
+    "id": "q120",
+    "theme": "influenciadores",
+    "text": "Em 2023, um evento do streamer Kai Cenat na Union Square, em Nova York, terminou em ___.",
+    "answer": "tumulto",
+    "source": "Wikipedia (en): 2023 Union Square riot",
+    "checked": false
+  },
+  {
+    "id": "q121",
+    "theme": "influenciadores",
+    "text": "Iran Ferreira viralizou fazendo embaixadinhas no campo de terra e gritando \"Receba!\". Ele é o Luva de ___.",
+    "answer": "Pedreiro",
+    "source": "Wikipedia (pt): Luva de Pedreiro",
+    "checked": false
+  },
+  {
+    "id": "q122",
+    "theme": "influenciadores",
+    "text": "Em 2025, o youtuber Felca publicou um vídeo sobre a ___ de crianças nas redes que mobilizou o Congresso.",
+    "answer": "adultização",
+    "source": "Wikipedia (pt): Felca",
+    "checked": false
+  },
+  {
+    "id": "q123",
+    "theme": "influenciadores",
+    "text": "Antes de vencer o BBB 24, Davi Brito trabalhava como motorista de ___ em Salvador.",
+    "answer": "aplicativo",
+    "source": "Wikipedia (pt): Davi Brito",
+    "checked": false
+  },
+  {
+    "id": "q124",
+    "theme": "influenciadores",
+    "text": "A influenciadora de finanças Nathalia Arcuri criou o canal ___.",
+    "answer": "Me Poupa!",
+    "source": "Wikipedia (pt): Nathalia Arcuri",
+    "checked": false
+  },
+  {
+    "id": "q125",
+    "theme": "musica",
+    "text": "\"Garota de Ipanema\" foi inspirada numa moça que passava em frente a um bar a caminho da ___.",
+    "answer": "praia",
+    "source": "Wikipedia (pt): Garota de Ipanema",
+    "checked": false
+  },
+  {
+    "id": "q126",
+    "theme": "musica",
+    "text": "\"Ai Se Eu Te Pego\", de Michel Teló, virou hit mundial em 2011 depois que ___ dançou a música num jogo.",
+    "answer": "Cristiano Ronaldo",
+    "source": "Wikipedia (pt): Ai Se Eu Te Pego",
+    "checked": false
+  },
+  {
+    "id": "q127",
+    "theme": "musica",
+    "text": "Antes de virar escritor famoso, ___ compôs vários sucessos de Raul Seixas.",
+    "answer": "Paulo Coelho",
+    "source": "Wikipedia (pt): Paulo Coelho",
+    "checked": false
+  },
+  {
+    "id": "q128",
+    "theme": "musica",
+    "text": "Na ditadura, \"Cálice\", de Chico Buarque e Gilberto Gil, brincava com o som da palavra ___.",
+    "answer": "cale-se",
+    "source": "Wikipedia (pt): Cálice (canção)",
+    "checked": false
+  },
+  {
+    "id": "q129",
+    "theme": "musica",
+    "text": "Para driblar a censura, Chico Buarque chegou a assinar músicas com o pseudônimo ___.",
+    "answer": "Julinho da Adelaide",
+    "source": "Wikipedia (pt): Chico Buarque",
+    "checked": false
+  },
+  {
+    "id": "q130",
+    "theme": "musica",
+    "text": "Em 1969, Caetano Veloso e Gilberto Gil foram presos pela ditadura e depois exilados na ___.",
+    "answer": "Inglaterra",
+    "source": "Wikipedia (pt): Caetano Veloso",
+    "checked": false
+  },
+  {
+    "id": "q131",
+    "theme": "musica",
+    "text": "Nos anos 1970, Tim Maia entrou para uma seita e gravou dois discos chamados Tim Maia ___.",
+    "answer": "Racional",
+    "source": "Wikipedia (pt): Tim Maia Racional",
+    "checked": false
+  },
+  {
+    "id": "q132",
+    "theme": "musica",
+    "text": "Tim Maia era famoso por ___ em muitos dos próprios shows.",
+    "answer": "não aparecer",
+    "source": "Wikipedia (pt): Tim Maia",
+    "checked": false
+  },
+  {
+    "id": "q133",
+    "theme": "musica",
+    "text": "Roberto Carlos é tão supersticioso que evita usar a cor ___.",
+    "answer": "marrom",
+    "source": "Wikipedia (pt): Roberto Carlos",
+    "checked": false
+  },
+  {
+    "id": "q134",
+    "theme": "musica",
+    "text": "Aos seis anos, Roberto Carlos perdeu parte de uma ___ num acidente com um trem.",
+    "answer": "perna",
+    "source": "Wikipedia (pt): Roberto Carlos",
+    "checked": false
+  },
+  {
+    "id": "q135",
+    "theme": "musica",
+    "text": "Os Mamonas Assassinas lançaram um único disco e morreram em 1996 num acidente de ___.",
+    "answer": "avião",
+    "source": "Wikipedia (pt): Mamonas Assassinas",
+    "checked": false
+  },
+  {
+    "id": "q136",
+    "theme": "musica",
+    "text": "O nome artístico de Anitta foi inspirado na personagem da minissérie ___.",
+    "answer": "Presença de Anita",
+    "source": "Wikipedia (pt): Anitta",
+    "checked": false
+  },
+  {
+    "id": "q137",
+    "theme": "musica",
+    "text": "Anitta cresceu no bairro carioca de ___.",
+    "answer": "Honório Gurgel",
+    "source": "Wikipedia (pt): Anitta",
+    "checked": false
+  },
+  {
+    "id": "q138",
+    "theme": "musica",
+    "text": "Em 2022, com \"Envolver\", Anitta foi a primeira brasileira solo a chegar ao topo do ranking global do ___.",
+    "answer": "Spotify",
+    "source": "Wikipedia (pt): Envolver",
+    "checked": false
+  },
+  {
+    "id": "q139",
+    "theme": "musica",
+    "text": "Antes da carreira solo, Cazuza era o vocalista do ___.",
+    "answer": "Barão Vermelho",
+    "source": "Wikipedia (pt): Cazuza",
+    "checked": false
+  },
+  {
+    "id": "q140",
+    "theme": "musica",
+    "text": "\"Faroeste Caboclo\", da Legião Urbana, tem mais de nove minutos e nenhum ___.",
+    "answer": "refrão",
+    "source": "Wikipedia (pt): Faroeste Caboclo",
+    "checked": false
+  },
+  {
+    "id": "q141",
+    "theme": "musica",
+    "text": "Em 1976, Rita Lee foi presa, grávida, acusada de porte de ___.",
+    "answer": "maconha",
+    "source": "Wikipedia (pt): Rita Lee",
+    "checked": false
+  },
+  {
+    "id": "q142",
+    "theme": "musica",
+    "text": "\"Evidências\" estourou com Chitãozinho & Xororó, mas foi gravada primeiro por ___.",
+    "answer": "José Augusto",
+    "source": "Wikipedia (pt): Evidências (canção)",
+    "checked": false
+  },
+  {
+    "id": "q143",
+    "theme": "musica",
+    "text": "Pabllo Vittar ficou conhecida com \"Open Bar\", uma versão de ___, do Major Lazer.",
+    "answer": "Lean On",
+    "source": "Wikipedia (pt): Pabllo Vittar",
+    "checked": false
+  },
+  {
+    "id": "q144",
+    "theme": "musica",
+    "text": "Marília Mendonça ficou conhecida como a Rainha da ___.",
+    "answer": "Sofrência",
+    "source": "Wikipedia (pt): Marília Mendonça",
+    "checked": false
+  },
+  {
+    "id": "q145",
+    "theme": "musica",
+    "text": "Em 1996, Michael Jackson gravou um clipe no Pelourinho, em Salvador, com a percussão do ___.",
+    "answer": "Olodum",
+    "source": "Wikipedia (pt): They Don't Care About Us",
+    "checked": false
+  },
+  {
+    "id": "q146",
+    "theme": "musica",
+    "text": "No primeiro Rock in Rio, em 1985, a plateia cantou \"Love of My Life\" inteira para o ___.",
+    "answer": "Queen",
+    "source": "Wikipedia (pt): Rock in Rio 1985",
+    "checked": false
+  },
+  {
+    "id": "q147",
+    "theme": "musica",
+    "text": "Gretchen, a cantora que virou meme, ficou conhecida nos anos 1980 como a Rainha do ___.",
+    "answer": "Bumbum",
+    "source": "Wikipedia (pt): Gretchen",
+    "checked": false
+  },
+  {
+    "id": "q148",
+    "theme": "musica",
+    "text": "Para achar a batida da bossa nova, João Gilberto passava horas tocando violão dentro do ___.",
+    "answer": "banheiro",
+    "source": "Wikipedia (pt): João Gilberto",
+    "checked": false
+  },
+  {
+    "id": "q149",
+    "theme": "musica",
+    "text": "Carmen Miranda, a \"pequena notável\" do Brasil, nasceu em ___.",
+    "answer": "Portugal",
+    "source": "Wikipedia (pt): Carmen Miranda",
+    "checked": false
+  },
+  {
+    "id": "q150",
+    "theme": "musica",
+    "text": "Ivete Sangalo começou a carreira como vocalista da Banda ___.",
+    "answer": "Eva",
+    "source": "Wikipedia (pt): Banda Eva",
+    "checked": false
+  },
+  {
+    "id": "q151",
+    "theme": "musica",
+    "text": "Em 2004, Zeca Pagodinho largou a propaganda da Nova Schin para fazer a da ___, e o caso foi parar na Justiça.",
+    "answer": "Brahma",
+    "source": "Wikipedia (pt): Zeca Pagodinho",
+    "checked": false
+  },
+  {
+    "id": "q152",
+    "theme": "musica",
+    "text": "\"Aquarela do Brasil\" ficou famosa no mundo num desenho da ___ de 1942, com o Zé Carioca.",
+    "answer": "Disney",
+    "source": "Wikipedia (pt): Alô, Amigos",
+    "checked": false
+  },
+  {
+    "id": "q153",
+    "theme": "musica",
+    "text": "Jorge Ben virou Jorge Ben Jor por causa de confusões nos direitos autorais com o americano ___.",
+    "answer": "George Benson",
+    "source": "Wikipedia (pt): Jorge Ben Jor",
+    "checked": false
+  },
+  {
+    "id": "q154",
+    "theme": "musica",
+    "text": "Vinicius de Moraes deu a Elis Regina o apelido de ___.",
+    "answer": "Pimentinha",
+    "source": "Wikipedia (pt): Elis Regina",
+    "checked": false
+  },
+  {
+    "id": "q155",
+    "theme": "musica",
+    "text": "A história de Zezé Di Camargo & Luciano virou o filme ___.",
+    "answer": "2 Filhos de Francisco",
+    "source": "Wikipedia (pt): 2 Filhos de Francisco",
+    "checked": false
+  },
+  {
+    "id": "q156",
+    "theme": "filmes",
+    "text": "Fernanda Montenegro foi a primeira brasileira indicada ao Oscar de melhor atriz, pelo filme ___.",
+    "answer": "Central do Brasil",
+    "source": "Wikipedia (pt): Central do Brasil",
+    "checked": false
+  },
+  {
+    "id": "q157",
+    "theme": "filmes",
+    "text": "No Oscar de 1999, Fernanda Montenegro perdeu a estatueta de melhor atriz para ___.",
+    "answer": "Gwyneth Paltrow",
+    "source": "Wikipedia (en): 71st Academy Awards",
+    "checked": false
+  },
+  {
+    "id": "q158",
+    "theme": "filmes",
+    "text": "\"Ainda Estou Aqui\", com Fernanda Torres, foi dirigido por ___.",
+    "answer": "Walter Salles",
+    "source": "Wikipedia (pt): Ainda Estou Aqui (filme)",
+    "checked": false
+  },
+  {
+    "id": "q159",
+    "theme": "filmes",
+    "text": "Em 2025, \"Ainda Estou Aqui\" deu ao Brasil seu primeiro Oscar de melhor ___.",
+    "answer": "filme internacional",
+    "source": "Wikipedia (pt): Ainda Estou Aqui (filme)",
+    "checked": false
+  },
+  {
+    "id": "q160",
+    "theme": "filmes",
+    "text": "Em \"Ainda Estou Aqui\", Fernanda Torres vive ___, cujo marido foi levado pela ditadura e nunca voltou.",
+    "answer": "Eunice Paiva",
+    "source": "Wikipedia (pt): Eunice Paiva",
+    "checked": false
+  },
+  {
+    "id": "q161",
+    "theme": "filmes",
+    "text": "No fim de \"Ainda Estou Aqui\", a personagem de Fernanda Torres aparece idosa, interpretada pela própria ___ da atriz.",
+    "answer": "mãe",
+    "source": "Wikipedia (pt): Ainda Estou Aqui (filme)",
+    "checked": false
+  },
+  {
+    "id": "q162",
+    "theme": "filmes",
+    "text": "Em 2025, Wagner Moura ganhou o prêmio de melhor ator em Cannes pelo filme ___.",
+    "answer": "O Agente Secreto",
+    "source": "Wikipedia (pt): O Agente Secreto",
+    "checked": false
+  },
+  {
+    "id": "q163",
+    "theme": "filmes",
+    "text": "Para viver Pablo Escobar em \"Narcos\", Wagner Moura engordou e teve que aprender ___.",
+    "answer": "espanhol",
+    "source": "Wikipedia (pt): Wagner Moura",
+    "checked": false
+  },
+  {
+    "id": "q164",
+    "theme": "filmes",
+    "text": "Em \"Tropa de Elite\", o Capitão Nascimento eternizou o grito \"Pede pra ___!\".",
+    "answer": "sair",
+    "source": "Wikipedia (pt): Tropa de Elite (filme)",
+    "checked": false
+  },
+  {
+    "id": "q165",
+    "theme": "filmes",
+    "text": "Milhões de pessoas viram \"Tropa de Elite\" antes da estreia porque o filme caiu na ___.",
+    "answer": "pirataria",
+    "source": "Wikipedia (pt): Tropa de Elite (filme)",
+    "checked": false
+  },
+  {
+    "id": "q166",
+    "theme": "filmes",
+    "text": "Boa parte do elenco de \"Cidade de Deus\" era formada por ___ de comunidades do Rio, sem experiência como atores.",
+    "answer": "moradores",
+    "source": "Wikipedia (pt): Cidade de Deus (filme)",
+    "checked": false
+  },
+  {
+    "id": "q167",
+    "theme": "filmes",
+    "text": "Em \"300\", Rodrigo Santoro interpretou o rei persa ___.",
+    "answer": "Xerxes",
+    "source": "Wikipedia (pt): Rodrigo Santoro",
+    "checked": false
+  },
+  {
+    "id": "q168",
+    "theme": "filmes",
+    "text": "Na animação ___, Rodrigo Santoro dublou o ornitólogo Túlio.",
+    "answer": "Rio",
+    "source": "Wikipedia (pt): Rio (filme)",
+    "checked": false
+  },
+  {
+    "id": "q169",
+    "theme": "filmes",
+    "text": "A atriz Alice Braga é sobrinha de ___.",
+    "answer": "Sônia Braga",
+    "source": "Wikipedia (pt): Alice Braga",
+    "checked": false
+  },
+  {
+    "id": "q170",
+    "theme": "filmes",
+    "text": "Em \"Dona Flor e Seus Dois Maridos\", um dos maridos da protagonista é um ___.",
+    "answer": "fantasma",
+    "source": "Wikipedia (pt): Dona Flor e Seus Dois Maridos (filme)",
+    "checked": false
+  },
+  {
+    "id": "q171",
+    "theme": "filmes",
+    "text": "Em \"O Auto da Compadecida\", Chicó sempre se explica com a frase \"Não sei, só sei que foi ___\".",
+    "answer": "assim",
+    "source": "Wikipedia (pt): O Auto da Compadecida (filme)",
+    "checked": false
+  },
+  {
+    "id": "q172",
+    "theme": "filmes",
+    "text": "Selton Mello, o Chicó, também dublou o imperador ___ numa animação da Disney.",
+    "answer": "Kuzco",
+    "source": "Wikipedia (pt): A Nova Onda do Imperador",
+    "checked": false
+  },
+  {
+    "id": "q173",
+    "theme": "filmes",
+    "text": "Em 2023, Bruna Marquezine estreou em Hollywood no filme ___, da DC.",
+    "answer": "Besouro Azul",
+    "source": "Wikipedia (pt): Besouro Azul (filme)",
+    "checked": false
+  },
+  {
+    "id": "q174",
+    "theme": "filmes",
+    "text": "Em Hollywood, Carmen Miranda virou ícone com seus turbantes cheios de ___.",
+    "answer": "frutas",
+    "source": "Wikipedia (pt): Carmen Miranda",
+    "checked": false
+  },
+  {
+    "id": "q175",
+    "theme": "filmes",
+    "text": "Em \"O Regresso\", Leonardo DiCaprio comeu de verdade um pedaço de ___ cru.",
+    "answer": "fígado de bisão",
+    "source": "Wikipedia (en): The Revenant (2015 film)",
+    "checked": false
+  },
+  {
+    "id": "q176",
+    "theme": "filmes",
+    "text": "Durante uma cena de \"Django Livre\", Leonardo DiCaprio ___ a mão de verdade e continuou atuando.",
+    "answer": "cortou",
+    "source": "Wikipedia (en): Django Unchained",
+    "checked": false
+  },
+  {
+    "id": "q177",
+    "theme": "filmes",
+    "text": "No Oscar de 2022, Will Smith subiu ao palco e deu um tapa em ___.",
+    "answer": "Chris Rock",
+    "source": "Wikipedia (en): Will Smith–Chris Rock slapping incident",
+    "checked": false
+  },
+  {
+    "id": "q178",
+    "theme": "filmes",
+    "text": "Em \"Missão Impossível: Protocolo Fantasma\", Tom Cruise escalou de verdade o ___, em Dubai.",
+    "answer": "Burj Khalifa",
+    "source": "Wikipedia (en): Mission: Impossible – Ghost Protocol",
+    "checked": false
+  },
+  {
+    "id": "q179",
+    "theme": "filmes",
+    "text": "Xuxa passou anos tentando tirar de circulação o filme ___, de 1982.",
+    "answer": "Amor Estranho Amor",
+    "source": "Wikipedia (pt): Amor Estranho Amor",
+    "checked": false
+  },
+  {
+    "id": "q180",
+    "theme": "filmes",
+    "text": "Mazzaropi ficou famoso no cinema com o personagem caipira ___.",
+    "answer": "Jeca Tatu",
+    "source": "Wikipedia (pt): Amácio Mazzaropi",
+    "checked": false
+  },
+  {
+    "id": "q181",
+    "theme": "filmes",
+    "text": "Em \"Os Trapalhões\", Renato Aragão interpretava o ___.",
+    "answer": "Didi",
+    "source": "Wikipedia (pt): Renato Aragão",
+    "checked": false
+  },
+  {
+    "id": "q182",
+    "theme": "filmes",
+    "text": "Em \"Minha Mãe é uma Peça\", Paulo Gustavo vivia Dona ___, inspirada na própria mãe.",
+    "answer": "Hermínia",
+    "source": "Wikipedia (pt): Minha Mãe É uma Peça",
+    "checked": false
+  },
+  {
+    "id": "q183",
+    "theme": "filmes",
+    "text": "Em \"Se Eu Fosse Você\", Tony Ramos e Glória Pires acordam com o ___ trocado.",
+    "answer": "corpo",
+    "source": "Wikipedia (pt): Se Eu Fosse Você",
+    "checked": false
+  },
+  {
+    "id": "q184",
+    "theme": "filmes",
+    "text": "Comentando o Oscar de 2016 na TV, Glória Pires virou meme com a frase \"Não sou capaz de ___\".",
+    "answer": "opinar",
+    "source": "Wikipedia (pt): Glória Pires",
+    "checked": false
+  },
+  {
+    "id": "q185",
+    "theme": "filmes",
+    "text": "Em 1973, Marlon Brando recusou o Oscar e mandou em seu lugar uma ativista ___.",
+    "answer": "indígena",
+    "source": "Wikipedia (en): Sacheen Littlefeather",
+    "checked": false
+  },
+  {
+    "id": "q186",
+    "theme": "filmes",
+    "text": "A carioca Morena Baccarin interpreta Vanessa, a namorada do herói em ___.",
+    "answer": "Deadpool",
+    "source": "Wikipedia (pt): Morena Baccarin",
     "checked": false
   }
 ]

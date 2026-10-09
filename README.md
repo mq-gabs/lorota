@@ -46,6 +46,10 @@ Small extensions that the spec's types didn't cover:
 - Room chat (the spec lists chat as out of scope): `chat:send { text }` event and `Snapshot.chat`, shown under
   every in-room screen with each message's author and send time. The server keeps the last 50 messages
   (`CHAT_HISTORY`, up to `MAX_CHAT_LENGTH` = 200 characters each) in memory and drops them when the room is deleted.
+- Question themes: the host picks one in the lobby (`room:setTheme { theme }`, LOBBY only) from `THEMES` in
+  `shared/src/config.ts`: Geral (default, every question), História, Esportes, Influenciadores, Música, Filmes.
+  Exposed as `Snapshot.theme` and `RoomListItem.theme`. Each question in `questions.json` has a `theme`; questions
+  tagged `geral` fit no specific theme and are only drawn in Geral.
 
 ## Deploying
 

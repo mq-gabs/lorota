@@ -1,5 +1,5 @@
-import { MAX_PLAYERS, MIN_PLAYERS } from "@lorota/shared";
-import type { Snapshot } from "@lorota/shared";
+import { MAX_PLAYERS, MIN_PLAYERS, THEMES } from "@lorota/shared";
+import type { Snapshot, Theme } from "@lorota/shared";
 import { useState } from "react";
 import { request } from "../net";
 import { S, errorText } from "../strings";
@@ -22,6 +22,12 @@ export function Lobby({ snapshot, onLeave }: { snapshot: Snapshot; onLeave: () =
 
   const start = async () => {
     const res = await request("game:start", {});
+    setError(res.ok ? null : errorText(res.error));
+  };
+
+  const pickTheme = async (theme: Theme) => {
+    if (theme === snapshot.theme) return;
+    const res = await request("room:setTheme", { theme });
     setError(res.ok ? null : errorText(res.error));
   };
 
@@ -52,6 +58,25 @@ export function Lobby({ snapshot, onLeave }: { snapshot: Snapshot; onLeave: () =
             );
           })}
         </ul>
+      </section>
+
+      <section className="card">
+        <h2>{S.theme}</h2>
+        <div className="theme-picker" role="radiogroup" aria-label={S.theme}>
+          {THEMES.map((t) => (
+            <button
+              key={t}
+              type="button"
+              role="radio"
+              aria-checked={t === snapshot.theme}
+              className={`theme-chip${t === snapshot.theme ? " selected" : ""}`}
+              disabled={!snapshot.you.isHost}
+              onClick={() => pickTheme(t)}
+            >
+              {S.themes[t]}
+            </button>
+          ))}
+        </div>
       </section>
 
       {snapshot.you.isHost ? (

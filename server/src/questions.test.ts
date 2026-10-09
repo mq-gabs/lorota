@@ -1,12 +1,13 @@
+import { THEMES } from "@lorota/shared";
 import { describe, expect, it } from "vitest";
 import { loadQuestions } from "./questions";
 
 describe("questions file", () => {
   const questions = loadQuestions();
 
-  it("has exactly 60 entries with unique ids q001..q060", () => {
-    expect(questions).toHaveLength(60);
-    expect(new Set(questions.map((q) => q.id)).size).toBe(60);
+  it("has exactly 186 entries with unique ids q001..q186", () => {
+    expect(questions).toHaveLength(186);
+    expect(new Set(questions.map((q) => q.id)).size).toBe(186);
     questions.forEach((q, i) => expect(q.id).toBe(`q${String(i + 1).padStart(3, "0")}`));
   });
 
@@ -17,6 +18,13 @@ describe("questions file", () => {
       expect(q.source.trim()).not.toBe("");
       expect(typeof q.checked).toBe("boolean");
       expect(q.text).toContain("___");
+      expect(THEMES).toContain(q.theme);
+    }
+  });
+
+  it("has at least 30 questions in every specific theme", () => {
+    for (const theme of THEMES.filter((t) => t !== "geral")) {
+      expect(questions.filter((q) => q.theme === theme).length, theme).toBeGreaterThanOrEqual(30);
     }
   });
 

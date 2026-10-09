@@ -86,16 +86,21 @@ These are documented in README "Additions beyond the spec". Keep them unless you
 - Audio API extra: `setMusicMood({ fast, ducked })`.
 - Room chat: `chat:send` + `Snapshot.chat` (`ChatMessage` with server `sentAt`). Kept on the `Room`, capped at
   `CHAT_HISTORY`, gone when the room is deleted. Rendered by `components/Chat.tsx` in every phase.
+- Question themes: `room:setTheme` (host, LOBBY only), `Snapshot.theme`, `RoomListItem.theme`. `THEMES` in
+  `config.ts`; labels in `S.themes` (`satisfies Record<Theme, string>`). `pickQuestion` filters by theme ("geral" =
+  all questions) and recycles only that theme's used ids.
 
 ## Questions (`server/data/questions.json`)
 
-- Entries: `{ id, text, answer, source, checked }`. `text` must contain `___`. Answers are 1–4 words, in
-  pt-BR. Ids are sequential (`q001`…).
+- Entries: `{ id, theme, text, answer, source, checked }`. `text` must contain `___`. Answers are 1–4 words, in
+  pt-BR. Ids are sequential (`q001`…) across all themes. `theme: "geral"` means the question fits no specific
+  theme (nature/science/geography) and is only drawn when the room plays Geral.
 - `q001`–`q030` are the spec's seed questions, copied verbatim. Don't edit them.
-- `q031`–`q060` were added at the owner's request with `checked: false`. `checked` means "verified against
+- `q031`–`q060` (History) and `q061`–`q186` (Esportes, Influenciadores, Música, Filmes) were added at the owner's
+  request with `checked: false`. `checked` means "verified against
   the source". Never set it to `true` without actually checking the source. It is never sent to clients.
-- `questions.test.ts` asserts the exact count (currently 60) and no repeated texts or answers. Update the
-  count when adding questions. SPEC.md and README still say 30; that's a known gap.
+- `questions.test.ts` asserts the exact count (currently 186), at least 30 per specific theme, and no repeated
+  texts or answers (across all themes). Update the count when adding questions. SPEC.md and README still say 30; that's a known gap.
 
 ## Testing
 

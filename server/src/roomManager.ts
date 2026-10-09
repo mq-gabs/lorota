@@ -3,6 +3,7 @@
 import { randomUUID } from "node:crypto";
 import {
   CHAT_HISTORY,
+  DEFAULT_THEME,
   EMPTY_ROOM_TTL_SECONDS,
   LOW_PLAYERS_TIMEOUT_SECONDS,
   MAX_CHAT_LENGTH,
@@ -12,12 +13,13 @@ import {
   REVEAL_SECONDS_PER_OPTION,
   ROUNDS_PER_GAME,
   SCOREBOARD_SECONDS,
+  THEMES,
   VOTING_SECONDS,
   WRITING_SECONDS,
   charLength,
   normalize,
 } from "@lorota/shared";
-import type { ChatMessage, ErrorCode, Phase, RevealedOption, RoomListItem, Snapshot } from "@lorota/shared";
+import type { ChatMessage, ErrorCode, Phase, RevealedOption, RoomListItem, Snapshot, Theme } from "@lorota/shared";
 import { buildOptions, buildReveal, randomId, resolveAnswers, scoreRound } from "./game";
 import type { Option, Rng } from "./game";
 import type { Question } from "./questions";
@@ -55,6 +57,7 @@ export interface Room {
   phaseEndsAt: number | null;
   lastPhaseTimedOut: boolean;
   usedQuestionIds: Set<string>;
+  theme: Theme;
   nextJoinOrder: number;
   /** Discarded together with the room. */
   chat: ChatMessage[];
@@ -116,6 +119,7 @@ export class RoomManager {
       phaseEndsAt: null,
       lastPhaseTimedOut: false,
       usedQuestionIds: new Set(),
+      theme: DEFAULT_THEME,
       nextJoinOrder: 0,
       chat: [],
       nextChatId: 0,
@@ -208,6 +212,17 @@ export class RoomManager {
     return { ok: true };
   }
 
+  setTheme(code: string, playerId: string, theme: unknown): Result {
+    const room = this.rooms.get(code);
+    if (!room || !this.isMember(room, playerId)) return fail("NOT_IN_ROOM");
+    if (!THEMES.includes(theme as Theme)) return fail("INVALID_PAYLOAD");
+    if (room.hostId !== playerId) return fail("NOT_HOST");
+    if (room.phase !== "LOBBY") return fail("WRONG_PHASE");
+    room.theme = theme as Theme;
+    this.notify(room);
+    return { ok: true };
+  }
+
   draft(code: string, playerId: string, text: unknown): Result {
     const room = this.rooms.get(code);
     if (!room || !this.isMember(room, playerId)) return fail("NOT_IN_ROOM");
@@ -293,6 +308,7 @@ export class RoomManager {
         playerCount: this.connectedCount(r),
         maxPlayers: MAX_PLAYERS,
         state: r.phase === "LOBBY" ? ("LOBBY" as const) : ("PLAYING" as const),
+        theme: r.theme,
       }));
     const joinable = (i: RoomListItem) => i.state === "LOBBY" && i.playerCount < i.maxPlayers;
     return [...items.filter(joinable), ...items.filter((i) => !joinable(i))];
@@ -329,6 +345,7 @@ export class RoomManager {
       serverNow: Date.now(),
       lastPhaseTimedOut: room.lastPhaseTimedOut,
       chat: [...room.chat],
+      theme: room.theme,
     };
   }
 
@@ -512,10 +529,11 @@ export class RoomManager {
   }
 
   private pickQuestion(room: Room): Question {
-    let pool = this.questions.filter((q) => !room.usedQuestionIds.has(q.id));
+    const themed = room.theme === "geral" ? this.questions : this.questions.filter((q) => q.theme === room.theme);
+    let pool = themed.filter((q) => !room.usedQuestionIds.has(q.id));
     if (pool.length === 0) {
-      room.usedQuestionIds.clear();
-      pool = this.questions;
+      for (const q of themed) room.usedQuestionIds.delete(q.id);
+      pool = themed;
     }
     const q = pool[Math.floor(this.rng() * pool.length)];
     room.usedQuestionIds.add(q.id);

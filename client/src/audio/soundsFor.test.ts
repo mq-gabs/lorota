@@ -25,6 +25,7 @@ function snap(phase: Phase, extra: Partial<Snapshot> = {}): Snapshot {
     serverNow: 0,
     lastPhaseTimedOut: false,
     chat: [],
+    theme: "geral",
     ...extra,
   };
 }

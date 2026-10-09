@@ -8,18 +8,20 @@ import {
   VOTING_SECONDS,
   WRITING_SECONDS,
 } from "@lorota/shared";
-import type { RoomListItem } from "@lorota/shared";
+import type { RoomListItem, Theme } from "@lorota/shared";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { Question } from "./questions";
 import { RoomManager } from "./roomManager";
 import type { Room } from "./roomManager";
 
-const QUESTIONS: Question[] = Array.from({ length: 10 }, (_, i) => ({
+// q0..q9 are History, q10..q12 Sports.
+const QUESTIONS: Question[] = Array.from({ length: 13 }, (_, i) => ({
   id: `q${i}`,
   text: `Pergunta secreta ${i} ___.`,
   answer: `verdade${i}xyz`,
   source: "x",
   checked: true,
+  theme: (i < 10 ? "historia" : "esportes") as Theme,
 }));
 
 function setup(n = 3) {
@@ -210,6 +212,33 @@ describe("phase machine", () => {
   });
 });
 
+describe("themes", () => {
+  it("only the host picks a valid theme, and only in the lobby", () => {
+    const { m, room, ids, lists } = setup(2);
+    expect(room.theme).toBe("geral");
+    expect(m.setTheme(room.code, ids[1], "esportes")).toEqual({ ok: false, error: "NOT_HOST" });
+    expect(m.setTheme(room.code, ids[0], "culinaria")).toEqual({ ok: false, error: "INVALID_PAYLOAD" });
+    expect(m.setTheme(room.code, ids[0], "esportes")).toEqual({ ok: true });
+    expect(m.snapshot(room, ids[1]).theme).toBe("esportes");
+    expect(lists.at(-1)![0].theme).toBe("esportes");
+    start(m, room, ids[0]);
+    expect(m.setTheme(room.code, ids[0], "historia")).toEqual({ ok: false, error: "WRONG_PHASE" });
+  });
+
+  it("draws only from the room's theme, recycling it when used up", () => {
+    const { m, room, ids } = setup(2);
+    m.setTheme(room.code, ids[0], "esportes");
+    start(m, room, ids[0]);
+    const seen: string[] = [];
+    for (let r = 1; r <= 4; r++) {
+      seen.push(room.round!.question.id);
+      vi.advanceTimersByTime((WRITING_SECONDS + VOTING_SECONDS + REVEAL_SECONDS_PER_OPTION * 3 + SCOREBOARD_SECONDS) * 1000);
+    }
+    expect(seen.every((id) => ["q10", "q11", "q12"].includes(id))).toBe(true);
+    expect(new Set(seen.slice(0, 3)).size).toBe(3);
+  });
+});
+
 describe("snapshot secrecy", () => {
   it("leaks no truth, authors, votes or drafts before REVEAL", () => {
     const { m, room, ids } = setup(3);
@@ -310,7 +339,7 @@ describe("room list", () => {
   it("reflects create, join, leave, start and delete", () => {
     const { m, room, ids, lists } = setup(1);
     expect(lists.at(-1)).toEqual([
-      { roomCode: room.code, hostNickname: "Ana", playerCount: 1, maxPlayers: 4, state: "LOBBY" },
+      { roomCode: room.code, hostNickname: "Ana", playerCount: 1, maxPlayers: 4, state: "LOBBY", theme: "geral" },
     ]);
     const j = m.joinRoom(room.code, "Bia");
     expect(lists.at(-1)![0].playerCount).toBe(2);

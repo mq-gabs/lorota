@@ -1,9 +1,15 @@
+import type { THEMES } from "./config";
+
+export type Theme = (typeof THEMES)[number];
+
 export interface RoomListItem {
   roomCode: string;
   hostNickname: string;
   playerCount: number; // connected players
   maxPlayers: number; // 4
   state: "LOBBY" | "PLAYING"; // PLAYING = any phase other than LOBBY
+  /** Extension: the room's question theme. */
+  theme: Theme;
 }
 
 export type Phase =
@@ -61,6 +67,8 @@ export interface Snapshot {
   lastPhaseTimedOut: boolean;
   /** Extension: the room's most recent chat messages, oldest first. */
   chat: ChatMessage[];
+  /** Extension: the question theme, chosen by the host in the lobby. */
+  theme: Theme;
 }
 
 export type ErrorCode =
@@ -88,6 +96,8 @@ export interface ClientToServerEvents {
   ) => void;
   /** Extension: leave the current room and go back to the room list. */
   "room:leave": (p: object, ack: (r: Ack) => void) => void;
+  /** Extension: host picks the question theme (LOBBY only). */
+  "room:setTheme": (p: { theme: Theme }, ack: (r: Ack) => void) => void;
   "game:start": (p: object, ack: (r: Ack) => void) => void;
   "lie:draft": (p: { text: string }) => void;
   "lie:submit": (p: { text: string }, ack: (r: Ack) => void) => void;
